@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --primeira-color: #100d28;
+  --segunda-color: #9606fc;
+  --terceira-color: #c484f1;
+  --quarta-color: #ff00e2;
+}
+
+.caixa-transparente {
+  width: 100%;
+  height: 100vh;
+  background-color: #100d28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.container img{
+  width: 35%;
+}
+
+.form {
+  border-radius: 20px;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.467);
+  backdrop-filter: blur(10px);
+} 
+.form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.inputs-all {
+  gap: 20px;
+  display: flex;
+  flex-direction: column
+}
+.input-entrar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.input-entrar input{
+  width: 85%;
+  font-size: 1.3em;
+  padding: 15px;
+  border-radius:10px ;
+  border: none;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.352);
+}
+.input-entrar input::placeholder {
+  color: var(--segunda-color);
+}
+.input-entrar input:focus {
+  outline: none;
+  color: var(--segunda-color);
+}
+.links-logos {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.links-logos a {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+.links-logos img{
+  width: 50%;
+  object-fit: cover;
+}
+.botao-entrar {
+  display: flex;
+  justify-content: center;
+}
+.botao-entrar button {
+  padding: 15px 60px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.3em;
+  margin: 10px 0 25px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.352);
+}
+.cadastrar {
+  text-align: center;
+  margin-bottom: 20px;
+}
