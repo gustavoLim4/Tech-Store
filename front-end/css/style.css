@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --primary-color: #100d28;
+  --secondary-color: #8906e6;
+  --text-color: #c484f1;
+  --background-color: #ff00e2;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  width: 60%;
+}
+
+.logo img {
+  width: 10%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  backdrop-filter: blur(50px); /* Efeito de desfoque */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Sombra difusa no centro */
+  padding: 15px;
+  border-radius: 20px;
+  position: relative; /* Necessário para aplicar o backdrop-filter corretamente */
+  background-color: rgba(255, 255, 255, 0.234); /* Fundo transparente */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--text-color);
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  
+}
+
+.icon {
+  width: 70px; /* Ajuste o tamanho do ícone */
+  height: 70px;
+  margin-left: 25px;
+  cursor: pointer;
+  backdrop-filter: blur(50px); /* Efeito de desfoque */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+  padding: 5px;
+  border-radius: 50%;
+  
+}
+
+.icon:hover {
+    box-shadow: 0 0 15px var(--secondary-color); 
+}
