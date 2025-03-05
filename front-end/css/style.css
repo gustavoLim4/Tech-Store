@@ -9,43 +9,39 @@
 }
 
 :root {
-  --primary-color: #100d28;
-  --secondary-color: #8906e6;
-  --text-color: #c484f1;
-  --background-color: #ff00e2;
+  --primeira-color: #100d28;
+  --segunda-color: #8906e6;
+  --terceira-color: #c484f1;
+  --quarta-color: #ff00e2;
 }
-
-
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
-  background-color: var(--primary-color);
+  padding: 10px 90px;
+  background-color: var(--primeira-color);
 }
 
 .logo {
-  width: 60%;
+  width: 40%;
 }
 
 .logo img {
-  width: 10%;
+  width: 35%;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  backdrop-filter: blur(50px); /* Efeito de desfoque */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Sombra difusa no centro */
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   padding: 15px;
   border-radius: 20px;
-  position: relative; /* Necessário para aplicar o backdrop-filter corretamente */
-  background-color: rgba(255, 255, 255, 0.234); /* Fundo transparente */
-}
-
-.nav-links li {
-  margin: 0 15px;
+  background-color: rgba(255, 255, 255, 0.234);
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-links a {
@@ -55,27 +51,61 @@
 }
 
 .nav-links a:hover {
-  color: var(--text-color);
+  color: var(--terceira-color);
+  transition: 0.4s ease;
+}
+.nav-links li:hover {
+  transition: 0.4s ease;
+  transform: scale(1.1);
 }
 
+.nav-links:hover {
+  box-shadow: 0 0 15px var(--terceira-color);
+  transition: 0.4s ease;
+}
 .nav-icons {
   display: flex;
   align-items: center;
-  
 }
 
 .icon {
-  width: 70px; /* Ajuste o tamanho do ícone */
-  height: 70px;
+  width: 55px; /* Ajuste o tamanho do ícone */
+  height: 55px;
   margin-left: 25px;
   cursor: pointer;
   backdrop-filter: blur(50px); /* Efeito de desfoque */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
   padding: 5px;
   border-radius: 50%;
-  
 }
 
 .icon:hover {
-    box-shadow: 0 0 15px var(--secondary-color); 
+  box-shadow: 0 0 15px var(--terceira-color);
+  transition: 0.5s ease;
+  transform: scale(1.05);
 }
+.banner{
+  width: 100%;
+  
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
