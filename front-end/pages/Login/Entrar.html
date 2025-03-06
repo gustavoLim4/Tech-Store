@@ -11,45 +11,58 @@
   <body>
     <main>
       <section>
-        <div class="caixa-transparente">
-          <form action="" class="form">
-            <div class="container">
-              <img src="../../img/favicon.png" alt="" />
-            </div>
-            <h1>Entra com sua a conta</h1>
-            <div class="inputs-all">
-              <div class="input-entrar">
-                <input type="text" placeholder="Email :" required />
+        <div>
+
+        </div>
+        <div class="dividir">
+          <div class="caixa-transparente">
+            <form action="" class="form" aria-label="Formulário de login">
+              <div class="container">
+                <img src="../../img/favicon.png" alt="" />
               </div>
-              <div class="input-entrar">
-                <input type="password" placeholder="Senha :" required />
+              <h1>Entra com sua a conta</h1>
+              <div class="inputs-all">
+                <div class="input-entrar">
+                  <input type="text" placeholder="Email :" required />
+                </div>
+                <div class="input-entrar">
+                  <input type="password" placeholder="Senha :" required />
+                </div>
+                <div class="botao-entrar">
+                  <button type="submit">Entrar</button>
+                </div>
+                <div class="links-logos">
+                  <a
+                    id="g_id_onload"
+                    data-client_id="40004211622-0l7i8k953opa4ij23pi5boqvgunrsb1r.apps.googleusercontent.com"
+                    data-callback="handleCredentialResponse"
+                    data-auto_prompt="false"
+                  >
+                    <div class="g_id_signin" data-type="standard"></div>
+                  </a>
+                  <a href="">
+                    <img src="../../img/LogoIphone.png" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="../../img/logoDC.png" alt="" />
+                  </a>
+                </div>
+                <div class="cadastrar">
+                  <p>
+                    Não tem cadasdro ? faça aqui
+                    <a href="cadastro.html">Cadastrar</a>
+                  </p>
+                </div>
               </div>
-              <div class="botao-entrar">
-                <button type="submit">Entrar</button>
-              </div>
-              <div class="links-logos">
-                <a href="">
-                  <img src="../../img/logoGoogle.png" alt="">
-                </a>
-                <a href="">
-                  <img src="../../img/LogoIphone.png" alt="">
-                </a>
-                <a href="">
-                  <img src="../../img/logoDC.png" alt="">
-                </a>
-              </div>
-              <div class="cadastrar">
-                <p>
-                  Não tem cadasdro ? faça aqui
-                  <a href="cadastro.html">Cadastrar</a>
-                </p>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
+          <div class="fundoImg">
+            <img src="../../img/fundoEntrar.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
-
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="js/jsLogin.js"></script>
   </body>
 </html>

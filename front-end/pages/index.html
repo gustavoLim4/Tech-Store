@@ -29,16 +29,34 @@
         </ul>
 
         <div class="nav-icons">
+          <!-- Ícone de carrinho (permanece visível) -->
           <a href="#cart" aria-label="Carrinho de compras">
             <img
               src="../img/carrinho.png"
               alt="Ícone de carrinho"
               class="icon"
+              id="carrinho"
             />
           </a>
-          <a href="../pages/Login/Entrar.html" aria-label="Área do usuário">
-            <img src="../img/user.png" alt="Ícone de usuário" class="icon" />
+
+          <!-- Ícone de usuário (será ocultado após login) -->
+          <a
+            href="../pages/Login/Entrar.html"
+            id="user"
+            aria-label="Área do usuário"
+          >
+            <img
+              src="../img/user.png"
+              alt="Ícone de usuário"
+              class="icon"
+              id="user-icon"
+            />
           </a>
+
+          <!-- Mensagem de boas-vindas (oculta inicialmente) -->
+          <div id="message" class="logado" style="display: none">
+            <p onclick="">Olá, <span id="name-user"></span>!</p>
+          </div>
         </div>
       </nav>
     </header>
