@@ -92,9 +92,8 @@
 .buscar img {
   width: 30px;
   height: 30px;
-  cursor: pointer;
-  position: fixed;
-  right: 370px;
+  position: absolute;
+  right: 315px;
 }
 .nav-icons {
   display: flex;
