@@ -19,8 +19,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 15px 80px;
   background-color: var(--primeira-color);
+  padding: 15px 0px;
 }
 
 .logo {
@@ -40,7 +40,7 @@
   padding: 15px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.234);
-  width: 30%;
+  width: 35%;
   display: flex;
   margin-right: 30px;
   justify-content: space-around;
@@ -68,6 +68,7 @@
 .buscar {
   display: flex;
   width: 25%;
+  align-items: center;
 }
 .buscar input {
   padding: 18px;
@@ -91,10 +92,9 @@
 .buscar img {
   width: 30px;
   height: 30px;
-  position: absolute;
-  top: 50px;
-  right: 385px;
-  display: block;
+  cursor: pointer;
+  position: fixed;
+  right: 370px;
 }
 .nav-icons {
   display: flex;
