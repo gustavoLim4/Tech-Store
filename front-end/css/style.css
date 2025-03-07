@@ -17,9 +17,9 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px 90px;
+  padding: 15px 80px;
   background-color: var(--primeira-color);
 }
 
@@ -29,6 +29,7 @@
 
 .logo img {
   width: 35%;
+  margin: 0px 0px 0px 80px;
 }
 
 .nav-links {
@@ -39,15 +40,16 @@
   padding: 15px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.234);
-  width: 50%;
+  width: 30%;
   display: flex;
+  margin-right: 30px;
   justify-content: space-around;
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .nav-links a:hover {
@@ -63,15 +65,47 @@
   box-shadow: 0 0 15px var(--terceira-color);
   transition: 0.4s ease;
 }
+.buscar {
+  display: flex;
+  width: 25%;
+}
+.buscar input {
+  padding: 18px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.234);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  font-size: 17px;
+  margin-right: 20px;
+}
+.buscar input:hover {
+  box-shadow: 0 0 15px var(--terceira-color);
+  transition: 0.5s ease;
+}
+
+.buscar input:focus {
+  outline: none;
+  color: #fff;
+}
+.buscar img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 385px;
+  display: block;
+}
 .nav-icons {
   display: flex;
   align-items: center;
+  width: 17%;
+  gap: 10px;
 }
 
 .icon {
   width: 55px; /* Ajuste o tamanho do ícone */
   height: 55px;
-  margin-left: 25px;
   cursor: pointer;
   backdrop-filter: blur(50px); /* Efeito de desfoque */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
@@ -84,9 +118,8 @@
   transition: 0.5s ease;
   transform: scale(1.05);
 }
-.banner{
+.banner {
   width: 100%;
-  
 }
 .carousel {
   position: relative;
@@ -108,4 +141,3 @@
   width: 100%;
   height: auto;
 }
-

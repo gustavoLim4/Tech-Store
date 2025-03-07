@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -20,14 +20,16 @@
             />
           </a>
         </div>
-
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="produtos.html">Produtos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-
+        <div class="buscar">
+          <img src="../img/buscar.png" alt="" />
+          <input type="text" />
+        </div>
         <div class="nav-icons">
           <!-- Ícone de carrinho (permanece visível) -->
           <a href="#cart" aria-label="Carrinho de compras">
@@ -38,7 +40,6 @@
               id="carrinho"
             />
           </a>
-
           <!-- Ícone de usuário (será ocultado após login) -->
           <a
             href="../pages/Login/Entrar.html"
@@ -52,7 +53,6 @@
               id="user-icon"
             />
           </a>
-
           <!-- Mensagem de boas-vindas (oculta inicialmente) -->
           <div id="message" class="logado" style="display: none">
             <p onclick="">Olá, <span id="name-user"></span>!</p>
@@ -74,9 +74,6 @@
             <img src="../img/Banner1.png" alt="Banner 1" />
           </figure>
         </div>
-      </section>
-      <section>
-        <div></div>
       </section>
     </main>
 
