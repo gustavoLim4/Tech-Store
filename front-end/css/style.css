@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -8,28 +6,20 @@
   font-weight: 400;
 }
 
-:root {
-  --primeira-color: #100d28;
-  --segunda-color: #8906e6;
-  --terceira-color: #c484f1;
-  --quarta-color: #ff00e2;
-}
-
 .navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--primeira-color);
+  background-color: #100d28;
   padding: 15px 0px;
 }
 
 .logo {
   width: 40%;
 }
-
 .logo img {
   width: 35%;
-  margin: 0px 0px 0px 80px;
+  margin-left: 80px;
 }
 
 .nav-links {
@@ -41,30 +31,27 @@
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.234);
   width: 35%;
-  display: flex;
   margin-right: 30px;
   justify-content: space-around;
 }
-
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 20px;
 }
-
 .nav-links a:hover {
-  color: var(--terceira-color);
+  color: #c484f1;
   transition: 0.4s ease;
 }
 .nav-links li:hover {
   transition: 0.4s ease;
   transform: scale(1.1);
 }
-
 .nav-links:hover {
-  box-shadow: 0 0 15px var(--terceira-color);
+  box-shadow: 0 0 15px #c484f1;
   transition: 0.4s ease;
 }
+
 .buscar {
   display: flex;
   width: 25%;
@@ -81,13 +68,12 @@
   margin-right: 20px;
 }
 .buscar input:hover {
-  box-shadow: 0 0 15px var(--terceira-color);
+  box-shadow: 0 0 15px #c484f1;
   transition: 0.5s ease;
 }
-
 .buscar input:focus {
   outline: none;
-  color: #fff;
+  color: #c484f1;
 }
 .buscar img {
   width: 30px;
@@ -95,6 +81,7 @@
   position: absolute;
   right: 315px;
 }
+
 .nav-icons {
   display: flex;
   align-items: center;
@@ -103,40 +90,40 @@
 }
 
 .icon {
-  width: 55px; /* Ajuste o tamanho do ícone */
+  width: 55px;
   height: 55px;
   cursor: pointer;
-  backdrop-filter: blur(50px); /* Efeito de desfoque */
+  backdrop-filter: blur(50px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
   padding: 5px;
   border-radius: 50%;
 }
-
 .icon:hover {
-  box-shadow: 0 0 15px var(--terceira-color);
+  box-shadow: 0 0 15px #8906e6;
   transition: 0.5s ease;
   transform: scale(1.05);
 }
+
 .banner {
   width: 100%;
 }
+
 .carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-
 .carousel-container {
   display: flex;
-  transition: transform 0.5s ease-in-out; /* Transição suave */
+  transition: transform 0.5s ease-in-out;
 }
-
 .carousel-item {
   min-width: 100%;
   transition: opacity 0.5s ease;
 }
-
 .carousel-item img {
   width: 100%;
   height: auto;
 }
+
+/*# sourceMappingURL=style.css.map */

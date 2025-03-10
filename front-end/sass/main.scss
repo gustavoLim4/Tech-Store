@@ -1,0 +1,144 @@
+@import "./variavel.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font; 
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $primeira; 
+  padding: 15px 0px;
+}
+
+.logo {
+  width: 40%;
+
+  img {
+    width: 35%;
+    margin-left: 80px;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.234);
+  width: 35%;
+  margin-right: 30px;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: $padrao; 
+    font-size: 20px;
+
+    &:hover {
+      color: $terceira; 
+      transition: 0.4s ease;
+    }
+  }
+
+  li {
+    &:hover {
+      transition: 0.4s ease;
+      transform: scale(1.1);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px $terceira; 
+    transition: 0.4s ease;
+  }
+}
+
+.buscar {
+  display: flex;
+  width: 25%;
+  align-items: center;
+
+  input {
+    padding: 18px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.234);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    font-size: 17px;
+    margin-right: 20px;
+
+    &:hover {
+      box-shadow: 0 0 15px $terceira; 
+      transition: 0.5s ease;
+    }
+
+    &:focus {
+      outline: none;
+      color: $terceira; 
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 315px;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  width: 17%;
+  gap: 10px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
+  padding: 5px;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 0 15px $segunda;
+    transition: 0.5s ease;
+    transform: scale(1.05);
+  }
+}
+
+.banner {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
