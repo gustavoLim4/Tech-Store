@@ -1,4 +1,5 @@
 @import "./variavel.scss";
+@import "./mixin.scss";
 
 * {
   padding: 0;
@@ -43,11 +44,11 @@ body {
   object-fit: cover;
 }
 .form {
-  border-radius: 20px;
+  @include bordas-arredondadas($raio: 20px);
   width: 40%;
   background-color: rgba(255, 255, 255, 0.223);
   backdrop-filter: blur(5px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.719);
+  @include sombra($padrao, 0.719);
   height: 650px;
 
   h1 {
@@ -71,9 +72,9 @@ body {
     width: 85%;
     font-size: 1.6em;
     padding: 10px;
-    border-radius: 10px;
+    @include bordas-arredondadas($raio: 10px);
     border: none;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.352);
+    @include sombra($padrao, 0.352);
   }
   &::placeholder {
     color: $terceira;
@@ -107,13 +108,13 @@ body {
 
   button {
     padding: 10px 50px;
-    border-radius: 15px;
+    @include bordas-arredondadas($raio: 15px);
     border: none;
     font-size: 1.6em;
     margin: 10px 0 10px;
     background-color: $padrao;
     color: $terceira;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.352);
+    @include sombra($padrao, 0.352);
   }
 }
 
@@ -130,7 +131,7 @@ body {
 
 .nsm7Bb-HzV7m-LgbsSe {
   height: 55px !important;
-  border-radius: 15px !important;
+  @include bordas-arredondadas($raio: 15px !important);
 
   .nsm7Bb-HzV7m-LgbsSe-Bz112c {
     height: 35px !important;

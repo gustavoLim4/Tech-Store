@@ -1,4 +1,5 @@
 @import "./variavel.scss";
+@import "./mixin.scss";
 
 * {
   padding: 0;
@@ -29,9 +30,9 @@
   list-style: none;
   display: flex;
   backdrop-filter: blur(50px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  @include sombra($padrao, 0.2);
   padding: 15px;
-  border-radius: 20px;
+  @include bordas-arredondadas(20px);
   background-color: rgba(255, 255, 255, 0.234);
   width: 35%;
   margin-right: 30px;
@@ -51,12 +52,12 @@
   li {
     &:hover {
       transition: 0.4s ease;
-      transform: scale(1.1);
+      @include scala($escala:1.1);
     }
   }
 
   &:hover {
-    box-shadow: 0 0 15px $terceira; 
+    @include sombra($terceira, 100);
     transition: 0.4s ease;
   }
 }
@@ -69,16 +70,16 @@
   input {
     padding: 18px;
     border: none;
-    border-radius: 20px;
+    @include bordas-arredondadas(20px);
     width: 100%;
     background-color: rgba(255, 255, 255, 0.234);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    @include sombra($padrao, 0.2);
     font-size: 17px;
     margin-right: 20px;
 
     &:hover {
-      box-shadow: 0 0 15px $terceira; 
-      transition: 0.5s ease;
+      @include sombra($terceira , 100);
+      @include transicao($tempo: 0.5s, $tipo: ease);
     }
 
     &:focus {
@@ -107,14 +108,14 @@
   height: 55px;
   cursor: pointer;
   backdrop-filter: blur(50px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
+  @include sombra($padrao, 0.13);
   padding: 5px;
-  border-radius: 50%;
+  @include bordas-arredondadas(50%);
 
   &:hover {
-    box-shadow: 0 0 15px $segunda;
-    transition: 0.5s ease;
-    transform: scale(1.05);
+    @include sombra($segunda, 100);
+    @include transicao($tempo: 0.5s, $tipo: ease);
+    @include scala($escala:1.1);
   }
 }
 
@@ -129,12 +130,12 @@
 
   &-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    @include transicao($tempo: 0.5s, $tipo: ease-in-out);
   }
 
   &-item {
     min-width: 100%;
-    transition: opacity 0.5s ease;
+    @include transicao($tempo: 0.5s, $tipo: ease);
 
     img {
       width: 100%;

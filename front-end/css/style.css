@@ -94,14 +94,14 @@
   height: 55px;
   cursor: pointer;
   backdrop-filter: blur(50px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.123);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.13);
   padding: 5px;
   border-radius: 50%;
 }
 .icon:hover {
   box-shadow: 0 0 15px #8906e6;
   transition: 0.5s ease;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .banner {
@@ -115,11 +115,11 @@
 }
 .carousel-container {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .carousel-item {
   min-width: 100%;
-  transition: opacity 0.5s ease;
+  transition: 0.5s ease;
 }
 .carousel-item img {
   width: 100%;
