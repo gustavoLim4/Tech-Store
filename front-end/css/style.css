@@ -126,4 +126,22 @@
   height: auto;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+.container-caixa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #100d28;
+}
+.container p {
+  width: 50%;
+  font-size: 0.9em;
+}
+
 /*# sourceMappingURL=style.css.map */

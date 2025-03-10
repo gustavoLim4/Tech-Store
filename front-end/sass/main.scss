@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: $font; 
+  font-family: $font;
   font-weight: 400;
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: $primeira; 
+  background-color: $primeira;
   padding: 15px 0px;
 }
 
@@ -40,11 +40,11 @@
 
   a {
     text-decoration: none;
-    color: $padrao; 
+    color: $padrao;
     font-size: 20px;
 
     &:hover {
-      color: $terceira; 
+      color: $terceira;
       transition: 0.4s ease;
     }
   }
@@ -52,7 +52,7 @@
   li {
     &:hover {
       transition: 0.4s ease;
-      @include scala($escala:1.1);
+      @include scala($escala: 1.1);
     }
   }
 
@@ -78,13 +78,13 @@
     margin-right: 20px;
 
     &:hover {
-      @include sombra($terceira , 100);
+      @include sombra($terceira, 100);
       @include transicao($tempo: 0.5s, $tipo: ease);
     }
 
     &:focus {
       outline: none;
-      color: $terceira; 
+      color: $terceira;
     }
   }
 
@@ -115,7 +115,7 @@
   &:hover {
     @include sombra($segunda, 100);
     @include transicao($tempo: 0.5s, $tipo: ease);
-    @include scala($escala:1.1);
+    @include scala($escala: 1.1);
   }
 }
 
@@ -141,5 +141,23 @@
       width: 100%;
       height: auto;
     }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  &-caixa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: $primeira;
+  }
+  p {
+    width: 50%;
+    font-size: .9em ;
   }
 }
