@@ -142,3 +142,5 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*sass --watch front-end/pages/login/sass/main.scss:front-end/pages/login/css/style.css */
