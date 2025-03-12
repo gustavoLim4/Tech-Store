@@ -131,7 +131,8 @@
   justify-content: center;
   width: 100%;
   gap: 40px;
-  padding: 20px 0;
+  padding: 25px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .container-caixa {
   display: flex;
@@ -187,6 +188,38 @@
   border-radius: 15px;
   text-decoration: none;
   margin: 30%;
+}
+
+.departamentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0;
+}
+.departamentos h1 {
+  font-size: 3.5em;
+  color: #8906e6;
+}
+.departamentos-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 70px 0 50px;
+}
+.departamentos-img img {
+  width: 29%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+}
+.departamentos a {
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #8906e6;
+  padding: 20px 50px;
+  border-radius: 15px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

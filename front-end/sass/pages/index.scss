@@ -1,200 +1,231 @@
 @import "../main.scss";
 
-  .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: $primeira;
-    padding: 15px 0px;
-  }
-  
-  .logo {
-    width: 40%;
-  
-    img {
-      width: 35%;
-      margin-left: 80px;
-    }
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    backdrop-filter: blur(50px);
-    @include sombra($padrao, 0.2);
-    padding: 15px;
-    @include bordas-arredondadas(20px);
-    background-color: rgba(255, 255, 255, 0.234);
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $primeira;
+  padding: 15px 0px;
+}
+
+.logo {
+  width: 40%;
+
+  img {
     width: 35%;
-    margin-right: 30px;
-    justify-content: space-around;
-  
-    a {
-      text-decoration: none;
-      color: $padrao;
-      font-size: 20px;
-  
-      &:hover {
-        color: $terceira;
-        transition: 0.4s ease;
-      }
-    }
-  
-    li {
-      &:hover {
-        transition: 0.4s ease;
-        @include scala($escala: 1.1);
-      }
-    }
-  
+    margin-left: 80px;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  backdrop-filter: blur(50px);
+  @include sombra($branco, 0.2);
+  padding: 15px;
+  @include bordas-arredondadas(20px);
+  background-color: rgba(255, 255, 255, 0.234);
+  width: 35%;
+  margin-right: 30px;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: $branco;
+    font-size: 20px;
+
     &:hover {
-      @include sombra($terceira, 100);
+      color: $terceira;
       transition: 0.4s ease;
     }
   }
-  
-  .buscar {
-    display: flex;
-    width: 25%;
-    align-items: center;
-  
-    input {
-      padding: 18px;
-      border: none;
-      @include bordas-arredondadas(20px);
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.234);
-      @include sombra($padrao, 0.2);
-      font-size: 17px;
-      margin-right: 20px;
-  
-      &:hover {
-        @include sombra($terceira, 100);
-        @include transicao($tempo: 0.5s, $tipo: ease);
-      }
-  
-      &:focus {
-        outline: none;
-        color: $terceira;
-      }
-    }
-  
-    img {
-      width: 30px;
-      height: 30px;
-      position: absolute;
-      right: 315px;
-    }
-  }
-  
-  .nav-icons {
-    display: flex;
-    align-items: center;
-    width: 17%;
-    gap: 10px;
-  }
-  
-  .icon {
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-    backdrop-filter: blur(50px);
-    @include sombra($padrao, 0.13);
-    padding: 5px;
-    @include bordas-arredondadas(50%);
-  
+
+  li {
     &:hover {
-      @include sombra($segunda, 100);
-      @include transicao($tempo: 0.5s, $tipo: ease);
+      transition: 0.4s ease;
       @include scala($escala: 1.1);
     }
   }
-  
-  .banner {
-    width: 100%;
+
+  &:hover {
+    @include sombra($terceira, 100);
+    transition: 0.4s ease;
   }
-  
-  .carousel {
-    position: relative;
+}
+
+.buscar {
+  display: flex;
+  width: 25%;
+  align-items: center;
+
+  input {
+    padding: 18px;
+    border: none;
+    @include bordas-arredondadas(20px);
     width: 100%;
-    overflow: hidden;
-  
-    &-container {
-      display: flex;
-      @include transicao($tempo: 0.5s, $tipo: ease-in-out);
-    }
-  
-    &-item {
-      min-width: 100%;
+    background-color: rgba(255, 255, 255, 0.234);
+    @include sombra($branco, 0.2);
+    font-size: 17px;
+    margin-right: 20px;
+
+    &:hover {
+      @include sombra($terceira, 100);
       @include transicao($tempo: 0.5s, $tipo: ease);
-  
-      img {
-        width: 100%;
-        height: auto;
-      }
+    }
+
+    &:focus {
+      outline: none;
+      color: $terceira;
     }
   }
-  
-  .container {
+
+  img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 315px;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  width: 17%;
+  gap: 10px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  backdrop-filter: blur(50px);
+  @include sombra($branco, 0.13);
+  padding: 5px;
+  @include bordas-arredondadas(50%);
+
+  &:hover {
+    @include sombra($segunda, 100);
+    @include transicao($tempo: 0.5s, $tipo: ease);
+    @include scala($escala: 1.1);
+  }
+}
+
+.banner {
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  &-container {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 40px;
-    padding: 20px 0;
-    &-caixa {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 15px;
-      color: $primeira;
-    }
-    p {
-      width: 50%;
-      font-size: 1.4em;
-    }
+    @include transicao($tempo: 0.5s, $tipo: ease-in-out);
+  }
+
+  &-item {
+    min-width: 100%;
+    @include transicao($tempo: 0.5s, $tipo: ease);
+
     img {
-      width: 20%;
+      width: 100%;
+      height: auto;
     }
   }
-  .sobre {
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  padding: 25px 0;
+  @include sombra($preto, 0.1);
+  &-caixa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: $primeira;
+  }
+  p {
+    width: 50%;
+    font-size: 1.4em;
+  }
+  img {
+    width: 20%;
+  }
+}
+.sobre {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+  &-img {
+    width: 60%;
+    img {
+      width: 100%;
+    }
+  }
+  &-texto {
+    width: 50%;
+    gap: 30px;
+    height: 745px;
+  }
+  &-texto p {
+    text-align: justify;
+    font-size: 2.7em;
+    width: 90%;
+    margin-bottom: 9%;
+  }
+  &-texto h1 {
+    font-size: 3.9em;
+    color: $primeira;
+    margin: 30px 0 15px;
+  }
+  &-texto span {
+    color: $segunda;
+  }
+  a {
+    font-size: 2.5em;
+    color: $branco;
+    background-color: $segunda;
+    padding: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 30%;
+  }
+}
+
+.departamentos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0;
+  h1 {
+    font-size: 3.5em;
+    color: $segunda;
+  }
+  &-img {
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin: 50px 0;
-    &-img {
-      width: 60%;
-      img {
-        width: 100%;
-      }
+    gap: 60px;
+    margin: 70px 0 50px;
+    img {
+      width: 29%;
+      @include sombra($preto, .20);
+      border-radius: 100%;
     }
-    &-texto {
-      width: 50%;
-      gap: 30px;
-      height: 745px;
-    }
-    &-texto p {
-      text-align: justify;
-      font-size: 2.7em;
-      width: 90%;
-      margin-bottom: 9%;
-    }
-    &-texto h1 {
-      font-size: 3.9em;
-      color: $primeira;
-      margin: 30px 0 15px;
-    }
-    &-texto span {
-      color: $segunda;
-    }
-    a {
-      font-size: 2.5em;
-      color: $padrao;
-      background-color: $segunda;
-      padding: 20px 50px;
-      border-radius:15px ;
-      text-decoration: none;
-      margin: 30%;
-    }
-  
   }
-  
+  a{
+    font-size: 2.5em;
+    color: $branco;
+    background-color: $segunda;
+    padding: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+}
