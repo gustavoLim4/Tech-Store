@@ -137,14 +137,56 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   color: #100d28;
 }
 .container p {
   width: 50%;
-  font-size: 0.9em;
+  font-size: 1.4em;
+}
+.container img {
+  width: 20%;
 }
 
-/* # sourceMappingURL=style.css.map
+.sobre {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+.sobre-img {
+  width: 60%;
+}
+.sobre-img img {
+  width: 100%;
+}
+.sobre-texto {
+  width: 50%;
+  gap: 30px;
+  height: 745px;
+}
+.sobre-texto p {
+  text-align: justify;
+  font-size: 2.7em;
+  width: 90%;
+  margin-bottom: 9%;
+}
+.sobre-texto h1 {
+  font-size: 3.9em;
+  color: #100d28;
+  margin: 30px 0 15px;
+}
+.sobre-texto span {
+  color: #8906e6;
+}
+.sobre a {
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #8906e6;
+  padding: 20px 50px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin: 30%;
+}
 
-sass --watch front-end/sass/main.scss:front-end/css/style.css */
+/*# sourceMappingURL=style.css.map */
