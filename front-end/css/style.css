@@ -1,9 +1,29 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  box-sizing: inherit;
+  font: inherit;
   font-weight: 400;
+  font-synthesis: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -35,7 +55,6 @@
   justify-content: space-around;
 }
 .nav-links a {
-  text-decoration: none;
   color: #fff;
   font-size: 20px;
 }
@@ -162,19 +181,19 @@
 }
 .sobre-texto {
   width: 50%;
-  gap: 30px;
   height: 745px;
 }
 .sobre-texto p {
   text-align: justify;
-  font-size: 2.7em;
+  font-size: 2.4em;
   width: 90%;
-  margin-bottom: 9%;
+  margin-bottom: 4%;
 }
 .sobre-texto h1 {
   font-size: 3.9em;
   color: #100d28;
-  margin: 30px 0 15px;
+  margin: 30px 0 0;
+  height: 95px;
 }
 .sobre-texto span {
   color: #8906e6;
@@ -182,11 +201,18 @@
 .sobre a {
   font-size: 2.5em;
   color: #fff;
-  background-color: #8906e6;
-  padding: 20px 50px;
+  padding: 25px 50px;
   border-radius: 15px;
-  text-decoration: none;
   margin: 30%;
+  color: #fff;
+  background: #8906e6;
+  background: linear-gradient(130deg, #8906e6 0%, #c484f1 100%);
+}
+.sobre a:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: 0.5s ease;
+  background: #8906e6;
+  background: linear-gradient(320deg, #8906e6 0%, #c484f1 100%);
 }
 
 .departamentos {
@@ -224,15 +250,17 @@
 .departamentos .ver-mais-produtos {
   font-size: 2.5em;
   color: #fff;
-  background-color: #8906e6;
   padding: 20px 50px;
   border-radius: 15px;
-  text-decoration: none;
+  background: #8906e6;
+  background: linear-gradient(140deg, #8906e6 0%, #c484f1 100%);
 }
 .departamentos .ver-mais-produtos:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
   transition: 0.5s ease;
-  transform: scale(1.02);
+  transform: scale(1.01);
+  background: #8906e6;
+  background: linear-gradient(340deg, #8906e6 0%, #c484f1 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
