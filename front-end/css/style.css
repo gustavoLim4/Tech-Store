@@ -132,7 +132,6 @@
   width: 100%;
   gap: 40px;
   padding: 25px 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .container-caixa {
   display: flex;
@@ -201,19 +200,28 @@
   font-size: 3.5em;
   color: #8906e6;
 }
-.departamentos-img {
+.departamentos-item {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 60px;
   margin: 70px 0 50px;
 }
+.departamentos-img {
+  width: 90%;
+  gap: 60px;
+  display: flex;
+}
 .departamentos-img img {
-  width: 29%;
+  width: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
 }
-.departamentos a {
+.departamentos-img img:hover {
+  box-shadow: 0 0 15px rgba(137, 6, 230, 0.6);
+  transition: 0.5s ease;
+  transform: scale(1.05);
+}
+.departamentos .ver-mais-produtos {
   font-size: 2.5em;
   color: #fff;
   background-color: #8906e6;
