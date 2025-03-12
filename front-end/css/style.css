@@ -229,5 +229,10 @@
   border-radius: 15px;
   text-decoration: none;
 }
+.departamentos .ver-mais-produtos:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: 0.5s ease;
+  transform: scale(1.02);
+}
 
 /*# sourceMappingURL=style.css.map */

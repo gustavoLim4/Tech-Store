@@ -235,5 +235,10 @@
     padding: 20px 50px;
     border-radius: 15px;
     text-decoration: none;
+    &:hover {
+      @include sombra($branco, 0.6);
+      @include transicao($tempo: 0.5s, $tipo: ease);
+      @include scala($escala: 1.02);
+    }
   }
 }
