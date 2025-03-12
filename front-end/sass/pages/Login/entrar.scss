@@ -1,15 +1,6 @@
-@import "./variavel.scss";
-@import "./mixin.scss";
+@import "../../main.scss";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: $font;
-  font-weight: 400;
-}
-
-body {
+  body {
   height: 100vh;
   overflow: hidden;
 }
