@@ -9,6 +9,12 @@ fetch("https://jsonplaceholder.typicode.com/comments")
         postar.innerHTML += `<h1>${exibirnatela.name}</h1>${exibirnatela.email}<p>${exibirnatela.body}</p>`;
     });
   });
+
+
+
+
+
   
+
 
 
