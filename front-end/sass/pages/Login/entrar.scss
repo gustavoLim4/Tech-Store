@@ -39,14 +39,14 @@
   width: 40%;
   background-color: rgba(255, 255, 255, 0.223);
   backdrop-filter: blur(5px);
-  @include sombra($padrao, 0.719);
-  height: 650px;
+  @include sombra($branco, 0.719);
+  height: 750px;
 
   h1 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2.1em;
-    color: #fff;
+    color: $branco;
   }
 }
 .inputs-all {
@@ -65,7 +65,7 @@
     padding: 10px;
     @include bordas-arredondadas($raio: 10px);
     border: none;
-    @include sombra($padrao, 0.352);
+    @include sombra($branco, 0.352);
   }
   &::placeholder {
     color: $terceira;
@@ -103,9 +103,9 @@
     border: none;
     font-size: 1.6em;
     margin: 10px 0 10px;
-    background-color: $padrao;
+    background-color: $branco;
     color: $terceira;
-    @include sombra($padrao, 0.352);
+    @include sombra($branco, 0.352);
   }
 }
 
@@ -113,7 +113,7 @@
   text-align: center;
   margin: 10px 0 10px;
   font-weight: bolder;
-  color: #fff;
+  color: $branco;
   font-size: 1.3em;
   .cadastrar a {
     color: $terceira;
