@@ -1,134 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsivo.css" />
-    <title>Tech Store</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html" aria-label="Página inicial">
-            <img
-              src="../img/logoescura.png"
-              alt="Logo da Tech Store"
-              class="logo-img"
-            />
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-        <div class="buscar">
-          <input type="text" />
-          <img src="../img/buscar.png" alt="" />
-        </div>
-        <div class="nav-icons">
-          <!-- Ícone de carrinho (permanece visível) -->
-          <a href="#cart" aria-label="Carrinho de compras">
-            <img
-              src="../img/carrinho.png"
-              alt="Ícone de carrinho"
-              class="icon"
-              id="carrinho"
-            />
-          </a>
-          <!-- Ícone de usuário (será ocultado após login) -->
-          <a
-            href="../pages/Login/Entrar.html"
-            id="user"
-            aria-label="Área do usuário"
-          >
-            <img
-              src="../img/user.png"
-              alt="Ícone de usuário"
-              class="icon"
-              id="user-icon"
-            />
-          </a>
-          <!-- Mensagem de boas-vindas (oculta inicialmente) -->
-          <div id="message" class="logado" style="display: none">
-            <p onclick="">Olá, <span id="name-user"></span>!</p>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <main>
-      <section class="carousel">
-        <div class="carousel-container">
-          <figure class="carousel-item">
-            <img src="../img/Banner3.png" alt="Banner 3" />
-          </figure>
-          <figure class="carousel-item">
-            <img src="../img/Banner2.png" alt="Banner 2" />
-          </figure>
-          <figure class="carousel-item">
-            <img src="../img/Banner1.png" alt="Banner 1" />
-          </figure>
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <div class="container-caixa">
-            <img src="../img/credit-card.png" alt="" />
-            <p>Frete gratis para todo o brasil</p>
-          </div>
-          <div class="container-caixa">
-            <img src="../img/box-seam.png" alt="" />
-            <p>Frete gratis para todo o brasil</p>
-          </div>
-          <div class="container-caixa">
-            <img src="../img/shield-check.png" alt="" />
-            <p>Site confiavel e seguro</p>
-          </div>
-          <div class="container-caixa">
-            <img src="../img/arrow-repeat.png" alt="" />
-            <p>Garantia de 90 dias</p>
-          </div>
-          <div class="container-caixa">
-            <img src="../img/gift.png" alt="" />
-            <p>Brindes exclusivos</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2 class="titulo">Confira nossos departamentos</h2>
-        <div class="container-departamento">
-          <img src="../img/celular-departamento.png" alt="">
-          <img src="../img/notebook-departamento.png" alt="">
-          <img src="../img/fone-departamento.png" alt="">
-        </div>
-      </section>
-      <a href="#" class="botao"> Ver mais</a>
-      <section>
-        <div class="sobre">
-          <figure class="sobre-img">
-            <img src="../img/imgsobre.png" alt="" />
-          </figure>
-          <aside class="sobre-texto">
-            <h1>Sobre a <span>Tech Store</span></h1>
-            <p>
-              Fundada com a missão de conectar pessoas à tecnologia de ponta, a
-              Tech Store nasceu da paixão por inovação e qualidade. Desde o
-              nosso início, buscamos oferecer os melhores produtos do mercado,
-              incluindo celulares, notebooks e fones de ouvido, garantindo que
-              nossos clientes tenham acesso às últimas tendências e avanços
-              tecnológicos.
-            </p>
-            <a href="#"> Ver mais</a>
-          </aside>
-        </div>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="../img/favicon.png" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsivo.css" />
+  <title>Tech Store</title>
+</head>
 
-    <script src="../js/javascript.js"></script>
-  </body>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" aria-label="Página inicial">
+          <img src="../img/logoescura.png" alt="Logo da Tech Store" class="logo-img" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="buscar">
+        <input type="text" />
+        <img src="../img/buscar.png" alt="" />
+      </div>
+      <div class="nav-icons">
+        <!-- Ícone de carrinho (permanece visível) -->
+        <a href="#cart" aria-label="Carrinho de compras">
+          <img src="../img/carrinho.png" alt="Ícone de carrinho" class="icon" id="carrinho" />
+        </a>
+        <!-- Ícone de usuário (será ocultado após login) -->
+        <a href="../pages/Login/Entrar.html" id="user" aria-label="Área do usuário">
+          <img src="../img/user.png" alt="Ícone de usuário" class="icon" id="user-icon" />
+        </a>
+        <!-- Mensagem de boas-vindas (oculta inicialmente) -->
+        <div id="message" class="logado" style="display: none">
+          <p onclick="">Olá, <span id="name-user"></span>!</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <div class="carousel-container">
+        <figure class="carousel-item">
+          <img src="../img/Banner3.png" alt="Banner 3" />
+        </figure>
+        <figure class="carousel-item">
+          <img src="../img/Banner2.png" alt="Banner 2" />
+        </figure>
+        <figure class="carousel-item">
+          <img src="../img/Banner1.png" alt="Banner 1" />
+        </figure>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="container-caixa">
+          <img src="../img/credit-card.png" alt="" />
+          <p>Frete gratis para todo o brasil</p>
+        </div>
+        <div class="container-caixa">
+          <img src="../img/box-seam.png" alt="" />
+          <p>Frete gratis para todo o brasil</p>
+        </div>
+        <div class="container-caixa">
+          <img src="../img/shield-check.png" alt="" />
+          <p>Site confiavel e seguro</p>
+        </div>
+        <div class="container-caixa">
+          <img src="../img/arrow-repeat.png" alt="" />
+          <p>Garantia de 90 dias</p>
+        </div>
+        <div class="container-caixa">
+          <img src="../img/gift.png" alt="" />
+          <p>Brindes exclusivos</p>
+        </div>
+      </div>
+    </section>
+    <!-- Colocar os botoes com as imagens dos produtos da area do departamento -->
+    <section>
+        <h1 class="Titutlo">Confira nossos departamentos</h1>
+      <a href="#" class="container-departamento">
+        <img src="../img/celular-departamento.png" alt="" />
+      </a>
+      <a href="#" class="container-departamento">
+      <img src="../img/notebook-departamento.png" alt="" /> 
+      </a>
+      <a href="#" class="container-departamento">
+      <img src="../img/fone-departamento.png" alt="" />
+     </a>
+        <a href="#" class="botao">Ver mais</a>
+    </section>
+    <div class="sobre">
+      <figure class="sobre-img">
+        <img src="../img/imgsobre.png" alt="" />
+      </figure>
+      <aside class="sobre-texto">
+        <h1>Sobre a <span>Tech Store</span></h1>
+        <p>
+          Fundada com a missão de conectar pessoas à tecnologia de ponta, a
+          Tech Store nasceu da paixão por inovação e qualidade. Desde o
+          nosso início, buscamos oferecer os melhores produtos do mercado,
+          incluindo celulares, notebooks e fones de ouvido, garantindo que
+          nossos clientes tenham acesso às últimas tendências e avanços
+          tecnológicos.
+        </p>
+        <a href="#"> Ver mais</a>
+      </aside>
+    </div>
+    </section>
+  </main>
+
+  <script src="../js/javascript.js"></script>
+</body>
+
 </html>
