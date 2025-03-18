@@ -1,13 +1,31 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  box-sizing: inherit;
+  font: inherit;
   font-weight: 400;
+  font-synthesis: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100dvh;
   overflow: hidden;
 }
 
@@ -47,7 +65,7 @@ body {
   background-color: rgba(255, 255, 255, 0.223);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.719);
-  height: 650px;
+  height: 750px;
 }
 .form h1 {
   text-align: center;
