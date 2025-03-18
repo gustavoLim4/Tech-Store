@@ -1,3 +1,14 @@
 @import "variavel";
 @import "mixin";
 @import "reset";
+
+
+
+
+// USar o sass compilado com css do front-end {Index.html}
+//sass --watch front-end\sass\pages\index.scss:front-end\css\style.css
+
+
+
+// USar o sass compilado com css do Login (entrar.html
+//sass --watch front-end/sass/pages/login/entrar.scss:front-end/pages/login/css/style.css
