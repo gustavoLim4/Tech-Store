@@ -1,3 +1,4 @@
+
 @mixin sombra($cor, $intensidade: 0.2) {
   box-shadow: 0 0 15px rgba($cor, $intensidade);
 }
@@ -9,4 +10,9 @@
 }
 @mixin transicao($tempo: 0.4s, $tipo: ease) {
   transition: $tempo $tipo;
+}
+
+@mixin cor-button($CorFort: rgb(137, 6, 230), $CorClara:rgb(163, 72, 229), $angulo: 140deg) {
+  background: $CorFort;
+  background: linear-gradient($angulo, $CorFort 0%, $CorClara 100%);
 }
