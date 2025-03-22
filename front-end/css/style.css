@@ -5,6 +5,7 @@
   font: inherit;
   font-weight: 400;
   font-synthesis: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -308,6 +309,10 @@ a {
   font-size: 1.8em;
 }
 .caixa-centro .caixa-sombra .caixa-information h4 {
+  color: #000;
+  font-size: 1.8em;
+}
+.caixa-centro .caixa-sombra .caixa-information del {
   color: #000;
   font-size: 1.8em;
 }
