@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="submit" class="form">
+      <input
+        type="text"
+        class="input-nome"
+        placeholder="Digite seu E-Nome :"
+      />
+      <input
+        type="text"
+        class="input-email"
+        placeholder="Digite seu E-mail :"
+      />
+      <input
+        type="password"
+        class="input-senha"
+        placeholder="Digite sua Senha :"
+      />
+
+      <button type="submit" onclick="mosntrar()">Enviar</button>
+    </form>
+    <script>
+      const nome = document.querySelector(".input-nome");
+      const email = document.querySelector(".input-email");
+      const senha = document.querySelector(".input-senha");
+
+      mosntrar = ()  => {
+        if (nome.value === "Gustavo" && email.value === "gustavo@gmail.com" && senha.value === "1234") {
+          document.write(`Seja Bem vindo <b>${nome.value}<b>`);
+        } else {
+          document.write("Email ou senha incorreto");
+        }
+      }
+    </script>
+  </body>
+</html>
