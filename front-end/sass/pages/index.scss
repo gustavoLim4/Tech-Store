@@ -310,7 +310,8 @@
         padding: 15px;
 
         img {
-          width: 85%;
+          width: 90%;
+          height: 300px;
         }
 
         .caixa-information {
@@ -332,6 +333,7 @@
             display: flex;
             justify-content: flex-start;
             text-align: justify;
+            height: 80px;
           }
 
           del {
@@ -339,6 +341,7 @@
             color: $preto;
             display: flex;
             justify-content: flex-start;
+            height: 50px;
           }
         }
       }
@@ -350,17 +353,19 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgb(0, 0, 0);
-    color: $segunda;
+    background: rgb(231, 231, 231);
+    color: $branco;
     border: none;
-    padding: 10px 19px;
+    padding: 10px 21px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     border-radius: 100%;
     z-index: 99999;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.8);
+      background: $segunda;
+      @include transicao($tempo: 0.5s, $tipo: ease);
     }
   }
 

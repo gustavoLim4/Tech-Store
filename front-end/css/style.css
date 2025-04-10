@@ -306,7 +306,8 @@ a {
   padding: 15px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra img {
-  width: 85%;
+  width: 90%;
+  height: 300px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information {
   margin-top: 9%;
@@ -326,28 +327,32 @@ a {
   display: flex;
   justify-content: flex-start;
   text-align: justify;
+  height: 80px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information del {
   font-size: 1.5em;
   color: #000;
   display: flex;
   justify-content: flex-start;
+  height: 50px;
 }
 .carrossel-container button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(0, 0, 0);
-  color: #8906e6;
+  background: rgb(231, 231, 231);
+  color: #fff;
   border: none;
-  padding: 10px 19px;
+  padding: 10px 21px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   border-radius: 100%;
   z-index: 99999;
 }
 .carrossel-container button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: #8906e6;
+  transition: 0.5s ease;
 }
 .carrossel-container .prev {
   left: 10px;
