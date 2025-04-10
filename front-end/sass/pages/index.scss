@@ -291,7 +291,7 @@
 
     .carrossel-item {
       flex: 0 0 auto;
-      width: 420px;
+      width: 440px;
       height: 600px;
       margin: 20px;
       border-radius: 10px;
@@ -307,7 +307,7 @@
         text-decoration: none;
         color: $segunda;
         display: block;
-        padding: 15px;
+        padding: 20px;
 
         img {
           width: 90%;
@@ -364,8 +364,12 @@
     z-index: 99999;
 
     &:hover {
-      background: $segunda;
-      @include transicao($tempo: 0.5s, $tipo: ease);
+         @include cor-button(
+        $CorFort: $segunda,
+        $CorClara: $terceira,
+        $angulo: 160deg
+      );
+      @include transicao($tempo: 0.9s, $tipo: ease);
     }
   }
 

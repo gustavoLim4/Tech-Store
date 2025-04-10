@@ -288,7 +288,7 @@ a {
 }
 .carrossel-container .carrossel .carrossel-item {
   flex: 0 0 auto;
-  width: 420px;
+  width: 440px;
   height: 600px;
   margin: 20px;
   border-radius: 10px;
@@ -303,7 +303,7 @@ a {
   text-decoration: none;
   color: #8906e6;
   display: block;
-  padding: 15px;
+  padding: 20px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra img {
   width: 90%;
@@ -352,7 +352,8 @@ a {
 }
 .carrossel-container button:hover {
   background: #8906e6;
-  transition: 0.5s ease;
+  background: linear-gradient(160deg, #8906e6 0%, #c484f1 100%);
+  transition: 0.9s ease;
 }
 .carrossel-container .prev {
   left: 10px;
