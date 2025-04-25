@@ -1,230 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="../img/favicon.png" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/responsivo.css" />
-  <title>Tech Store</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html" aria-label="Página inicial">
-          <img src="../img/logoescura.png" alt="Logo da Tech Store" class="logo-img" />
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-      <div class="buscar">
-        <input type="text" />
-        <img src="../img/buscar.png" alt="" />
-      </div>
-      <div class="nav-icons">
-        <!-- Ícone de carrinho (permanece visível) -->
-        <a href="#cart" aria-label="Carrinho de compras">
-          <img src="../img/carrinho.png" alt="Ícone de carrinho" class="icon" id="carrinho" />
-        </a>
-        <!-- Ícone de usuário (será ocultado após login) -->
-        <a href="../pages/Login/Entrar.html" id="user" aria-label="Área do usuário">
-          <img src="../img/user.png" alt="Ícone de usuário" class="icon" id="user-icon" />
-        </a>
-        <!-- Mensagem de boas-vindas (oculta inicialmente) -->
-        <div id="message" class="logado" style="display: none">
-          <p onclick="">Olá, <span id="name-user"></span>!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsivo.css" />
+    <title>Tech Store</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" aria-label="Página inicial">
+            <img
+              src="../img/logoescura.png"
+              alt="Logo da Tech Store"
+              class="logo-img"
+            />
+          </a>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="carousel">
-      <div class="carousel-container">
-        <figure class="carousel-item">
-          <img src="../img/Banner3.png" alt="Banner 3" />
-        </figure>
-        <figure class="carousel-item">
-          <img src="../img/Banner2.png" alt="Banner 2" />
-        </figure>
-        <figure class="carousel-item">
-          <img src="../img/Banner1.png" alt="Banner 1" />
-        </figure>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="container-caixa">
-          <img src="../img/credit-card.png" alt="" />
-          <p>Frete gratis para todo o brasil</p>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="buscar">
+          <input type="text" />
+          <img src="../img/buscar.png" alt="" />
         </div>
-        <div class="container-caixa">
-          <img src="../img/box-seam.png" alt="" />
-          <p>Frete gratis para todo o brasil</p>
-        </div>
-        <div class="container-caixa">
-          <img src="../img/shield-check.png" alt="" />
-          <p>Site confiavel e seguro</p>
-        </div>
-        <div class="container-caixa">
-          <img src="../img/arrow-repeat.png" alt="" />
-          <p>Garantia de 90 dias</p>
-        </div>
-        <div class="container-caixa">
-          <img src="../img/gift.png" alt="" />
-          <p>Brindes exclusivos</p>
-        </div>
-      </div>
-    </section>
-    <!-- Colocar os botoes com as imagens dos produtos da area do departamento -->
-    <section>
-        <h1 class="departamentos">Confira nossos departamentos</h1>
-      <a href="#" class="container-departamento">
-        <img src="../img/celular-departamento.png" alt="" />
-      </a>
-      <a href="#" class="container-departamento">
-      <img src="../img/notebook-departamento.png" alt="" /> 
-      </a>
-      <a href="#" class="container-departamento">
-      <img src="../img/fone-departamento.png" alt="" />
-     </a>
-        <a href="#" class="botao">Ver mais</a>
-    </section>
-    <div class="sobre">
-      <figure class="sobre-img">
-        <img src="../img/imgsobre.png" alt="" />
-      </figure>
-      <aside class="sobre-texto">
-        <h1>Sobre a <span>Tech Store</span></h1>
-        <p>
-          Fundada com a missão de conectar pessoas à tecnologia de ponta, a
-          Tech Store nasceu da paixão por inovação e qualidade. Desde o
-          nosso início, buscamos oferecer os melhores produtos do mercado,
-          incluindo celulares, notebooks e fones de ouvido, garantindo que
-          nossos clientes tenham acesso às últimas tendências e avanços
-          tecnológicos.
-        </p>
-        <a href="#"> Ver mais</a>
-      </aside>
-    </div>
-    </section>
-    <section>
-      <div class="promocoes">
-        <h1>Promoções</h1>
-        <div class="carrossel-container">
-          <button class="prev">&#10094;</button>
-          <div class="carrossel">
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure>
-                  <img
-                    src="../img/airPods4.png"
-                    alt="AirPods 4"
-                  />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>AirPods 4 com Cancelamento Ativo de Ruído</h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 999,50</h2>
-                </div>
-              </a>
-            </div>
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure>
-                  <img
-                    src="../img/airPodsMax.png"
-                    alt="AirPods Max"
-                  />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>AirPods Max – Meia-noite</h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 3.295,00</h2>
-                </div>
-              </a>
-            </div>
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure id="fone-maior">
-                  <img src="../img/beatsSolo.png" alt="Beats Solo 4" />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>
-                    Beats Solo 4 – Fone de ouvido supra-auricular sem fio
-                  </h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 974,50</h2>
-                </div>
-              </a>
-            </div>
-         
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure>
-                  <img
-                    src="../img/airPods4.png"
-                    alt="AirPods 4"
-                  />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>AirPods 4 com Cancelamento Ativo de Ruído</h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 999,50</h2>
-                </div>
-              </a>
-            </div>
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure>
-                  <img
-                    src="../img/airPodsMax.png"
-                    alt="AirPods Max"
-                  />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>AirPods Max – Meia-noite</h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 3.295,00</h2>
-                </div>
-              </a>
-            </div>
-            <div class="carrossel-item">
-              <a href="" class="caixa-sombra">
-                <figure id="fone-maior">
-                  <img src="../img/beatsSolo.png" alt="Beats Solo 4" />
-                </figure>
-                <div class="caixa-information">
-                  <h2>Novo</h2>
-                  <h3>
-                    Beats Solo 4 – Fone de ouvido supra-auricular sem fio
-                  </h3>
-                  <del>R$ 1.999,00</del>
-                  <h2>R$ 974,50</h2>
-                </div>
-              </a>
-            </div>
-         
+        <div class="nav-icons">
+          <!-- Ícone de carrinho (permanece visível) -->
+          <a href="#cart" aria-label="Carrinho de compras">
+            <img
+              src="../img/carrinho.png"
+              alt="Ícone de carrinho"
+              class="icon"
+              id="carrinho"
+            />
+          </a>
+          <!-- Ícone de usuário (será ocultado após login) -->
+          <a
+            href="../pages/Login/Entrar.html"
+            id="user"
+            aria-label="Área do usuário"
+          >
+            <img
+              src="../img/user.png"
+              alt="Ícone de usuário"
+              class="icon"
+              id="user-icon"
+            />
+          </a>
+          <!-- Mensagem de boas-vindas (oculta inicialmente) -->
+          <div id="message" class="logado" style="display: none">
+            <p onclick="">Olá, <span id="name-user"></span>!</p>
           </div>
-          <button class="next">&#10095;</button>
         </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+    </header>
 
-  <script src="../js/javascript.js"></script>
-</body>
+    <main>
+      <section class="carousel">
+        <div class="carousel-container">
+          <figure class="carousel-item">
+            <img src="../img/Banner3.png" alt="Banner 3" />
+          </figure>
+          <figure class="carousel-item">
+            <img src="../img/Banner2.png" alt="Banner 2" />
+          </figure>
+          <figure class="carousel-item">
+            <img src="../img/Banner1.png" alt="Banner 1" />
+          </figure>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="container-caixa">
+            <img src="../img/credit-card.png" alt="" />
+            <p>Frete gratis para todo o brasil</p>
+          </div>
+          <div class="container-caixa">
+            <img src="../img/box-seam.png" alt="" />
+            <p>Frete gratis para todo o brasil</p>
+          </div>
+          <div class="container-caixa">
+            <img src="../img/shield-check.png" alt="" />
+            <p>Site confiavel e seguro</p>
+          </div>
+          <div class="container-caixa">
+            <img src="../img/arrow-repeat.png" alt="" />
+            <p>Garantia de 90 dias</p>
+          </div>
+          <div class="container-caixa">
+            <img src="../img/gift.png" alt="" />
+            <p>Brindes exclusivos</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="departamentos">
+          <h1>Confira nossos departamentos</h1>
+          <figure class="departamentos-img">
+            <a href="" class="departamentos-item">
+              <img src="../img/celular-departamento.png" alt="" />
+            </a>
+            <a href="" class="departamentos-item">
+              <img src="../img/notebook-departamento.png" alt="" />
+            </a>
+            <a href="" class="departamentos-item">
+              <img src="../img/fone-departamento.png" alt="" />
+            </a>
+          </figure>
+          <a href="#" class="ver-mais-produtos"> Ver mais</a>
+        </div>
+      </section>
+      <section>
+        <div class="sobre">
+          <figure class="sobre-img">
+            <img src="../img/imgsobre.png" alt="" />
+          </figure>
+          <aside class="sobre-texto">
+            <h1>Sobre a <span>Tech Store</span></h1>
+            <p>
+              Fundada com a missão de conectar pessoas à tecnologia de ponta, a
+              Tech Store nasceu da paixão por inovação e qualidade. Desde o
+              nosso início, buscamos oferecer os melhores produtos do mercado,
+              incluindo celulares, notebooks e fones de ouvido, garantindo que
+              nossos clientes tenham acesso às últimas tendências e avanços
+              tecnológicos.
+            </p>
+            <a href="#"> Ver mais</a>
+          </aside>
+        </div>
+      </section>
+      <section>
+        <div class="promocoes">
+          <h1>Promoções</h1>
+          <div class="carrossel-container">
+            <button class="prev">&#10094;</button>
+            <div class="carrossel">
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure>
+                    <img
+                      src="../img/airPods4.png"
+                      alt="AirPods 4"
+                    />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>AirPods 4 com Cancelamento Ativo de Ruído</h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 999,50</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure>
+                    <img
+                      src="../img/airPodsMax.png"
+                      alt="AirPods Max"
+                    />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>AirPods Max – Meia-noite</h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 3.295,00</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure id="fone-maior">
+                    <img src="../img/beatsSolo.png" alt="Beats Solo 4" />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>
+                      Beats Solo 4 – Fone de ouvido supra-auricular sem fio
+                    </h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 974,50</h2>
+                  </div>
+                </a>
+              </div>
+           
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure>
+                    <img
+                      src="../img/airPods4.png"
+                      alt="AirPods 4"
+                    />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>AirPods 4 com Cancelamento Ativo de Ruído</h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 999,50</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure>
+                    <img
+                      src="../img/airPodsMax.png"
+                      alt="AirPods Max"
+                    />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>AirPods Max – Meia-noite</h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 3.295,00</h2>
+                  </div>
+                </a>
+              </div>
+              <div class="carrossel-item">
+                <a href="" class="caixa-sombra">
+                  <figure id="fone-maior">
+                    <img src="../img/beatsSolo.png" alt="Beats Solo 4" />
+                  </figure>
+                  <div class="caixa-information">
+                    <h2>Novo</h2>
+                    <h3>
+                      Beats Solo 4 – Fone de ouvido supra-auricular sem fio
+                    </h3>
+                    <del>R$ 1.999,00</del>
+                    <h2>R$ 974,50</h2>
+                  </div>
+                </a>
+              </div>
+           
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <script src="../js/javascript.js"></script>
+  </body>
 </html>
