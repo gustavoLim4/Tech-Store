@@ -33,10 +33,10 @@ a {
 }
 
 .logo {
-  width: 40%;
+  width: 30%;
 }
 .logo img {
-  width: 35%;
+  width: 30%;
   margin-left: 80px;
 }
 
@@ -45,7 +45,7 @@ a {
   display: flex;
   backdrop-filter: blur(50px);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.234);
   width: 35%;
@@ -53,9 +53,8 @@ a {
   justify-content: space-around;
 }
 .nav-links a {
-  text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
 }
 .nav-links a:hover {
   color: #c484f1;
@@ -76,13 +75,13 @@ a {
   align-items: center;
 }
 .buscar input {
-  padding: 18px;
+  padding: 11px;
   border: none;
   border-radius: 20px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.234);
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  font-size: 17px;
+  font-size: 16px;
   margin-right: 20px;
 }
 .buscar input:hover {
@@ -91,13 +90,13 @@ a {
 }
 .buscar input:focus {
   outline: none;
-  color: #c484f1;
+  color: #fff;
 }
 .buscar img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  right: 315px;
+  right: 245px;
 }
 
 .nav-icons {
@@ -144,83 +143,12 @@ a {
   height: auto;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 40px;
-  padding: 20px 0;
-}
-.container-caixa {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-  color: #100d28;
-}
-.container p {
-  width: 50%;
-  font-size: 1.4em;
-}
-.container img {
-  width: 20%;
-}
-
-.sobre {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 50px 0;
-}
-.sobre-img {
-  width: 60%;
-}
-.sobre-img img {
-  width: 100%;
-}
-.sobre-texto {
-  width: 50%;
-  gap: 30px;
-  height: 745px;
-}
-.sobre-texto p {
-  text-align: justify;
-  font-size: 2.7em;
-  width: 90%;
-  margin-bottom: 9%;
-}
-.sobre-texto h1 {
-  font-size: 3.9em;
-  color: #100d28;
-  margin: 30px 0 15px;
-}
-.sobre-texto span {
-  color: #8906e6;
-}
-.sobre a {
-  font-size: 2.5em;
-  color: #fff;
-  background-color: #8906e6;
-  padding: 20px 50px;
-  border-radius: 15px;
-  text-decoration: none;
-  margin: 30%;
-  background: #8906e6;
-  background: linear-gradient(130deg, #8906e6 0%, #c484f1 100%);
-}
-.sobre a:hover {
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  transition: 0.5s ease;
-  background: #8906e6;
-  background: linear-gradient(320deg, #8906e6 0%, #c484f1 100%);
-}
-
 .departamentos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 60px 0;
+  margin: 60px 0 100px;
 }
 .departamentos h1 {
   font-size: 3.5em;
@@ -248,9 +176,9 @@ a {
   transform: scale(1.05);
 }
 .departamentos .ver-mais-produtos {
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: #fff;
-  padding: 20px 50px;
+  padding: 15px 50px;
   border-radius: 15px;
   background: #8906e6;
   background: linear-gradient(140deg, #8906e6 0%, #c484f1 100%);
@@ -261,6 +189,72 @@ a {
   transform: scale(1.01);
   background: #8906e6;
   background: linear-gradient(340deg, #8906e6 0%, #c484f1 100%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  padding: 25px 0;
+}
+.container-caixa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: #100d28;
+}
+.container p {
+  width: 50%;
+  font-size: 1em;
+}
+.container img {
+  width: 15%;
+}
+
+.sobre {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.sobre-img {
+  width: 55%;
+}
+.sobre-img img {
+  width: 90%;
+}
+.sobre-texto {
+  width: 50%;
+}
+.sobre-texto p {
+  text-align: justify;
+  font-size: 1.7em;
+  width: 90%;
+  margin-bottom: 4%;
+}
+.sobre-texto h1 {
+  font-size: 2.8em;
+  color: #100d28;
+  height: 60px;
+}
+.sobre-texto span {
+  color: #8906e6;
+}
+.sobre a {
+  font-size: 2em;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 15px;
+  color: #fff;
+  background: #8906e6;
+  background: linear-gradient(130deg, #8906e6 0%, #c484f1 100%);
+}
+.sobre a:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: 0.5s ease;
+  background: #8906e6;
+  background: linear-gradient(320deg, #8906e6 0%, #c484f1 100%);
 }
 
 .promocoes {
@@ -289,8 +283,8 @@ a {
 }
 .carrossel-container .carrossel .carrossel-item {
   flex: 0 0 auto;
-  width: 420px;
-  height: 600px;
+  width: 380px;
+  height: 530px;
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -304,13 +298,14 @@ a {
   text-decoration: none;
   color: #8906e6;
   display: block;
-  padding: 15px;
+  padding: 20px;
+  height: 100%;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra img {
-  width: 85%;
+  width: 80%;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information {
-  margin-top: 9%;
+  margin-top: 2%;
   height: 30px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information h2 {
@@ -327,28 +322,33 @@ a {
   display: flex;
   justify-content: flex-start;
   text-align: justify;
+  height: 80px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information del {
   font-size: 1.5em;
   color: #000;
   display: flex;
   justify-content: flex-start;
+  height: 50px;
 }
 .carrossel-container button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(0, 0, 0);
-  color: #8906e6;
+  background: rgb(231, 231, 231);
+  color: #fff;
   border: none;
-  padding: 10px 19px;
+  padding: 10px 21px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   border-radius: 100%;
   z-index: 99999;
 }
 .carrossel-container button:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: #8906e6;
+  background: linear-gradient(160deg, #8906e6 0%, #c484f1 100%);
+  transition: 0.9s ease;
 }
 .carrossel-container .prev {
   left: 10px;
@@ -357,8 +357,238 @@ a {
   right: 10px;
 }
 
-#fone-maior img {
-  width: 55%;
+footer {
+  background-color: #100d28;
+  color: #fff;
+  padding: 30px 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 20px 40px 20px;
+}
+
+.icons-contact {
+  width: 20%;
+}
+.icons-contact img {
+  width: 80%;
+}
+.icons-contact .icons-container {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0 0 0;
+}
+.icons-contact .icons-container a {
+  color: #fff;
+}
+.icons-contact .icons-container a svg {
+  width: 50px;
+  height: 50px;
+}
+.icons-contact .icons-container a:hover {
+  color: #8906e6;
+  transition: 0.4s ease;
+  transform: scale(1.05);
+}
+
+.footer-menu {
+  width: 18%;
+}
+.footer-menu h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.footer-menu .links-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-menu .links-menu-footer a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+.footer-menu .links-menu-footer a:hover {
+  color: #8906e6;
+}
+
+.icons-contact,
+.footer-contact,
+.footer-hours {
+  width: 25%;
+}
+.icons-contact h2,
+.footer-contact h2,
+.footer-hours h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.icons-contact .contact-links,
+.footer-contact .contact-links,
+.footer-hours .contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 0 20px 0;
+}
+.icons-contact .contact-links a,
+.footer-contact .contact-links a,
+.footer-hours .contact-links a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+}
+.icons-contact .contact-links a:hover,
+.footer-contact .contact-links a:hover,
+.footer-hours .contact-links a:hover {
+  color: #8906e6;
+}
+.icons-contact .horarios-footer,
+.footer-contact .horarios-footer,
+.footer-hours .horarios-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.icons-contact .horarios-footer p,
+.footer-contact .horarios-footer p,
+.footer-hours .horarios-footer p {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+}
+.icons-contact .maps,
+.footer-contact .maps,
+.footer-hours .maps {
+  width: 300px;
+  height: 170px;
+  border: 3px solid #8906e6 !important;
+  border-radius: 10px;
+}
+
+.final-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #fff;
+}
+.final-footer-links {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+}
+.final-footer-links a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+.final-footer-links a:hover {
+  color: #8906e6;
+}
+
+.direitos h3 {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 10px;
+}
+
+.info-container {
+  font-family: "Montserrat", sans-serif;
+}
+.info-container h1 {
+  font-size: 3.4em;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.info-container h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.info-container p {
+  font-size: 1.2em;
+  color: rgb(48, 48, 48);
+  margin: 5px 0;
+}
+.info-container .links-contact {
+  display: flex;
+  gap: 30px;
+  margin: 20px 10px;
+}
+.info-container .links-contact a {
+  color: #000;
+}
+.info-container .links-contact a svg {
+  width: 35px;
+  height: 35px;
+}
+.info-container .links-contact a:hover {
+  color: #8906e6;
+  transition: 0.4s ease;
+  transform: scale(1.05);
+}
+
+.formulario-contato {
+  width: 40%;
+}
+.formulario-contato .input-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.formulario-contato .input-contato input,
+.formulario-contato .input-contato textarea {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.formulario-contato .input-contato input:focus,
+.formulario-contato .input-contato textarea:focus {
+  outline: none;
+  color: #000;
+}
+.formulario-contato .input-contato textarea {
+  resize: none;
+  height: 150px;
+}
+.formulario-contato .formulario-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.formulario-contato .formulario-button button {
+  color: #fff;
+  background: #8906e6;
+  background: linear-gradient(140deg, #8906e6 0%, #c484f1 100%);
+  border: none;
+  border-radius: 3px;
+  width: 25%;
+  margin: 20px 0;
+  padding: 10px;
+  font-weight: bold;
+}
+.formulario-contato .formulario-button button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: 0.2s ease;
+  transform: scale(1.01);
+  background: #8906e6;
+  background: linear-gradient(340deg, #8906e6 0%, #c484f1 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

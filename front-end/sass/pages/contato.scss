@@ -1,0 +1,98 @@
+.contato {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 10px;
+}
+
+.info-container {
+  font-family: $font;
+  h1 {
+    font-size: 3.4em;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.2em;
+    color: rgb(48, 48, 48);
+    margin: 5px 0;
+  }
+  .links-contact {
+    display: flex;
+    gap: 30px;
+    margin: 20px 10px;
+    a {
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+      color: $preto;
+      &:hover {
+        color: $segunda;
+        @include transicao($tempo: 0.4s, $tipo: ease);
+        @include scala($escala: 1.05);
+      }
+    }
+  }
+}
+
+.formulario-contato {
+  width: 40%;
+
+  .input-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    input,
+    textarea {
+      border: none;
+      @include sombra($preto, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+        color: $preto;
+      }
+    }
+    textarea {
+        resize: none;
+        height: 150px;
+    }
+    
+  }
+
+  .formulario-button {
+    display: flex;
+    flex-direction: row-reverse;
+    button {
+      color: $branco;
+      @include cor-button(
+        $CorFort: $segunda,
+        $CorClara: $terceira,
+        $angulo: 140deg
+      );
+      border: none;
+      border-radius: 3px;
+      width: 25%;
+      margin: 20px 0;
+      padding: 10px;
+      font-weight: bold;
+
+      &:hover {
+        @include sombra($branco, 0.6);
+        @include transicao($tempo: 0.2s, $tipo: ease);
+        @include scala($escala: 1.01);
+        @include cor-button(
+          $CorFort: $segunda,
+          $CorClara: $terceira,
+          $angulo: 340deg
+        );
+      }
+    }
+  }
+}
