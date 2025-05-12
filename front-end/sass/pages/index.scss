@@ -9,10 +9,10 @@
 }
 
 .logo {
-  width: 40%;
+  width: 30%;
 
   img {
-    width: 35%;
+    width: 30%;
     margin-left: 80px;
   }
 }
@@ -22,7 +22,7 @@
   display: flex;
   backdrop-filter: blur(50px);
   @include sombra($branco, 0.2);
-  padding: 15px;
+  padding: 10px;
   @include bordas-arredondadas(20px);
   background-color: rgba(255, 255, 255, 0.234);
   width: 35%;
@@ -31,7 +31,7 @@
 
   a {
     color: $branco;
-    font-size: 20px;
+    font-size: 17px;
 
     &:hover {
       color: $terceira;
@@ -58,13 +58,13 @@
   align-items: center;
 
   input {
-    padding: 18px;
+    padding: 11px;
     border: none;
     @include bordas-arredondadas(20px);
     width: 100%;
     background-color: rgba(255, 255, 255, 0.234);
     @include sombra($branco, 0.2);
-    font-size: 17px;
+    font-size: 16px;
     margin-right: 20px;
 
     &:hover {
@@ -74,15 +74,15 @@
 
     &:focus {
       outline: none;
-      color: $terceira;
+      color: $branco;
     }
   }
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    right: 315px;
+    right: 245px;
   }
 }
 
@@ -133,88 +133,12 @@
     }
   }
 }
-
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 40px;
-  padding: 25px 0;
-  &-caixa {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    color: $primeira;
-  }
-  p {
-    width: 50%;
-    font-size: 1.4em;
-  }
-  img {
-    width: 20%;
-  }
-}
-.sobre {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 50px 0;
-  &-img {
-    width: 60%;
-    img {
-      width: 100%;
-    }
-  }
-  &-texto {
-    width: 50%;
-    height: 745px;
-  }
-  &-texto p {
-    text-align: justify;
-    font-size: 2.4em;
-    width: 90%;
-    margin-bottom: 4%;
-  }
-  &-texto h1 {
-    font-size: 3.9em;
-    color: $primeira;
-    margin: 30px 0 0;
-    height: 95px;
-  }
-  &-texto span {
-    color: $segunda;
-  }
-  a {
-    font-size: 2.5em;
-    color: $branco;
-    padding: 25px 50px;
-    border-radius: 15px;
-    margin: 30%;
-    color: $branco;
-    @include cor-button(
-      $CorFort: $segunda,
-      $CorClara: $terceira,
-      $angulo: 130deg
-    );
-    &:hover {
-      @include sombra($branco, 0.6);
-      @include transicao($tempo: 0.5s, $tipo: ease);
-      @include cor-button(
-        $CorFort: $segunda,
-        $CorClara: $terceira,
-        $angulo: 320deg
-      );
-    }
-  }
-}
-
 .departamentos {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 60px 0;
+  margin: 60px 0 100px;
   h1 {
     font-size: 3.5em;
     color: $segunda;
@@ -241,9 +165,9 @@
     }
   }
   .ver-mais-produtos {
-    font-size: 2.5em;
+    font-size: 2.3em;
     color: $branco;
-    padding: 20px 50px;
+    padding: 15px 50px;
     border-radius: 15px;
 
     @include cor-button(
@@ -260,6 +184,77 @@
         $CorFort: $segunda,
         $CorClara: $terceira,
         $angulo: 340deg
+      );
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 25px;
+  padding: 25px 0;
+  &-caixa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: $primeira;
+  }
+  p {
+    width: 50%;
+    font-size: 1em;
+  }
+  img {
+    width: 15%;
+  }
+}
+.sobre {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  &-img {
+    width: 55%;
+    img {
+      width: 90%;
+    }
+  }
+  &-texto {
+    width: 50%;
+  }
+  &-texto p {
+    text-align: justify;
+    font-size: 1.7em;
+    width: 90%;
+    margin-bottom: 4%;
+  }
+  &-texto h1 {
+    font-size: 2.8em;
+    color: $primeira;
+    height: 60px;
+  }
+  &-texto span {
+    color: $segunda;
+  }
+  a {
+    font-size: 2em;
+    color: $branco;
+    padding: 15px 40px;
+    border-radius: 15px;
+    color: $branco;
+    @include cor-button(
+      $CorFort: $segunda,
+      $CorClara: $terceira,
+      $angulo: 130deg
+    );
+    &:hover {
+      @include sombra($branco, 0.6);
+      @include transicao($tempo: 0.5s, $tipo: ease);
+      @include cor-button(
+        $CorFort: $segunda,
+        $CorClara: $terceira,
+        $angulo: 320deg
       );
     }
   }
@@ -291,8 +286,8 @@
 
     .carrossel-item {
       flex: 0 0 auto;
-      width: 440px;
-      height: 600px;
+      width: 380px;
+      height: 530px;
       margin: 20px;
       border-radius: 10px;
       @include sombra($preto, 0.2);
@@ -308,14 +303,13 @@
         color: $segunda;
         display: block;
         padding: 20px;
-
+        height: 100%;
         img {
-          width: 90%;
-          height: 300px;
+          width: 80%;
         }
 
         .caixa-information {
-          margin-top: 9%;
+          margin-top: 2%;
           height: 30px;
 
           h2 {
@@ -364,7 +358,7 @@
     z-index: 99999;
 
     &:hover {
-         @include cor-button(
+      @include cor-button(
         $CorFort: $segunda,
         $CorClara: $terceira,
         $angulo: 160deg
@@ -382,6 +376,131 @@
   }
 }
 
-#fone-maior img {
-  width: 55%;
+footer {
+  background-color: $primeira;
+  color: $branco;
+  padding: 30px 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  margin: 20px 40px 20px;
+}
+.icons-contact {
+  width: 20%;
+
+  img {
+    width: 80%;
+  }
+  .icons-container {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0 0 0;
+    a {
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+      color: $branco;
+      &:hover {
+        color: $segunda;
+        @include transicao($tempo: 0.4s, $tipo: ease);
+        @include scala($escala: 1.05);
+      }
+    }
+  }
+}
+.footer-menu {
+  width: 18%;
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-family: $font;
+  }
+  .links-menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    a {
+      color: $branco;
+      font-family: $font;
+      font-size: 1.2em;
+      &:hover {
+        color: $segunda;
+      }
+    }
+  }
+}
+
+.icons-contact,
+.footer-contact,
+.footer-hours {
+  width: 25%;
+
+  h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-family: $font;
+  }
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 0 20px 0;
+    a {
+      color: $branco;
+      font-family: $font;
+      font-size: 1.2em;
+      &:hover {
+        color: $segunda;
+      }
+    }
+  }
+  .horarios-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    p {
+      color: $branco;
+      font-size: 1.2em;
+      font-family: $font;
+    }
+  }
+  .maps {
+    width: 300px;
+    height: 170px;
+    border: 3px solid $segunda !important;
+    border-radius: 10px;
+  }
+}
+.final-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid $branco;
+  &-links {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+
+    a {
+      color: $branco;
+      font-family: $font;
+      font-size: 1em;
+      &:hover {
+        color: $segunda;
+      }
+    }
+  }
+}
+.direitos h3 {
+  text-align: center;
+  padding: 10px;
+  color: $branco;
+  font-family: $font;
+  font-size: 1em;
 }
