@@ -502,4 +502,94 @@ footer {
   font-size: 1em;
 }
 
+.contato {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px 10px;
+}
+
+.info-container {
+  font-family: "Montserrat", sans-serif;
+}
+.info-container h1 {
+  font-size: 3.4em;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.info-container h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.info-container p {
+  font-size: 1.2em;
+  color: rgb(48, 48, 48);
+  margin: 5px 0;
+}
+.info-container .links-contact {
+  display: flex;
+  gap: 30px;
+  margin: 20px 10px;
+}
+.info-container .links-contact a {
+  color: #000;
+}
+.info-container .links-contact a svg {
+  width: 35px;
+  height: 35px;
+}
+.info-container .links-contact a:hover {
+  color: #8906e6;
+  transition: 0.4s ease;
+  transform: scale(1.05);
+}
+
+.formulario-contato {
+  width: 40%;
+}
+.formulario-contato .input-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.formulario-contato .input-contato input,
+.formulario-contato .input-contato textarea {
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.formulario-contato .input-contato input:focus,
+.formulario-contato .input-contato textarea:focus {
+  outline: none;
+  color: #000;
+}
+.formulario-contato .input-contato textarea {
+  resize: none;
+  height: 150px;
+}
+.formulario-contato .formulario-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.formulario-contato .formulario-button button {
+  color: #fff;
+  background: #8906e6;
+  background: linear-gradient(140deg, #8906e6 0%, #c484f1 100%);
+  border: none;
+  border-radius: 3px;
+  width: 25%;
+  margin: 20px 0;
+  padding: 10px;
+  font-weight: bold;
+}
+.formulario-contato .formulario-button button:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: 0.2s ease;
+  transform: scale(1.01);
+  background: #8906e6;
+  background: linear-gradient(340deg, #8906e6 0%, #c484f1 100%);
+}
+
 /*# sourceMappingURL=style.css.map */
