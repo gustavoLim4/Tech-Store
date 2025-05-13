@@ -277,23 +277,23 @@ a {
   scroll-behavior: smooth;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 20px 45px;
+  padding: 10px 35px;
 }
 .carrossel-container .carrossel::-webkit-scrollbar {
   display: none;
 }
 .carrossel-container .carrossel .carrossel-item {
   flex: 0 0 auto;
-  width: 380px;
-  height: 530px;
-  margin: 20px;
+  width: 350px;
+  height: 460px;
+  margin: 10px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 .carrossel-container .carrossel .carrossel-item:hover {
   transition: 0.4s ease;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra {
   text-decoration: none;
@@ -303,14 +303,14 @@ a {
   height: 100%;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra img {
-  width: 80%;
+  width: 75%;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information {
   margin-top: 2%;
   height: 30px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #8906e6;
   display: flex;
   justify-content: flex-start;
@@ -318,44 +318,19 @@ a {
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information h3 {
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 5px 0;
   display: flex;
   justify-content: flex-start;
   text-align: justify;
-  height: 80px;
+  height: 60px;
 }
 .carrossel-container .carrossel .carrossel-item .caixa-sombra .caixa-information del {
-  font-size: 1.5em;
-  color: #000;
+  font-size: 1.2em;
+  color: #292929;
   display: flex;
   justify-content: flex-start;
   height: 50px;
-}
-.carrossel-container button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgb(231, 231, 231);
-  color: #fff;
-  border: none;
-  padding: 10px 21px;
-  cursor: pointer;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 100%;
-  z-index: 99999;
-}
-.carrossel-container button:hover {
-  background: #8906e6;
-  background: linear-gradient(160deg, #8906e6 0%, #c484f1 100%);
-  transition: 0.9s ease;
-}
-.carrossel-container .prev {
-  left: 10px;
-}
-.carrossel-container .next {
-  right: 10px;
 }
 
 footer {

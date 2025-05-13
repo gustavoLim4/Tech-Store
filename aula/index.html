@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formulario">
+      <input type="text" id="nome" placeholder="Nome :" />
+      <input type="number" id="nota1" placeholder="Nota 1 :" />
+      <input type="number" id="nota2" placeholder="Nota 2 :" />
+      <input type="number" id="nota3" placeholder="Nota 3 :" />
+      <button type="button" onclick="PushDados()">Enviar</button>
+    </form>
+    <div class="info">
+      <h1>Nome : <span id="nomeAluno"></span></h1>
+      <h1>Nota 1 : <span id="nota1Aluno"></span></h1>
+      <h1>Nota 2 : <span id="nota2Aluno"></span></h1>
+      <h1>Nota 3 : <span id="nota3Aluno"></span></h1>
+      <h1>Média : <span id="mediaAluno"></span></h1>
+      <h1>Status : <span id="status"></span></h1>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

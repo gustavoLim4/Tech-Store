@@ -276,7 +276,7 @@
     scroll-behavior: smooth;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 20px 45px;
+    padding: 10px 35px;
 
     &::-webkit-scrollbar {
       display: none; // Esconde a barra de rolagem
@@ -284,16 +284,16 @@
 
     .carrossel-item {
       flex: 0 0 auto;
-      width: 380px;
-      height: 530px;
-      margin: 20px;
+      width: 350px;
+      height: 460px;
+      margin: 10px;
       border-radius: 10px;
       @include sombra($preto, 0.2);
       text-align: center;
 
       &:hover {
         @include transicao($tempo: 0.4s, $tipo: ease);
-        @include scala($escala: 1.05);
+        @include scala($escala: 1.03);
       }
 
       .caixa-sombra {
@@ -303,7 +303,7 @@
         padding: 20px;
         height: 100%;
         img {
-          width: 80%;
+          width: 75%;
         }
 
         .caixa-information {
@@ -311,7 +311,7 @@
           height: 30px;
 
           h2 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: $segunda;
             display: flex;
             justify-content: flex-start;
@@ -320,17 +320,17 @@
 
           h3 {
             color: $preto;
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin: 5px 0;
             display: flex;
             justify-content: flex-start;
             text-align: justify;
-            height: 80px;
+            height: 60px;
           }
 
           del {
-            font-size: 1.5em;
-            color: $preto;
+            font-size: 1.2em;
+            color: #292929;
             display: flex;
             justify-content: flex-start;
             height: 50px;
@@ -338,39 +338,6 @@
         }
       }
     }
-  }
-
-  // Botões de navegação
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgb(231, 231, 231);
-    color: $branco;
-    border: none;
-    padding: 10px 21px;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 100%;
-    z-index: 99999;
-
-    &:hover {
-      @include cor-button(
-        $CorFort: $segunda,
-        $CorClara: $terceira,
-        $angulo: 160deg
-      );
-      @include transicao($tempo: 0.9s, $tipo: ease);
-    }
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
   }
 }
 
