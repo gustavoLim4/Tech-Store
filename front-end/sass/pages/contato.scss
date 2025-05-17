@@ -60,10 +60,9 @@
       }
     }
     textarea {
-        resize: none;
-        height: 150px;
+      resize: none;
+      height: 150px;
     }
-    
   }
 
   .formulario-button {
@@ -79,7 +78,7 @@
       border: none;
       border-radius: 3px;
       width: 25%;
-      margin: 20px 0;
+      margin: 10px 0;
       padding: 10px;
       font-weight: bold;
 
@@ -94,5 +93,19 @@
         );
       }
     }
+  }
+  #messagem {
+    background-color: #ffffff;
+    @include sombra($preto, 0.2);
+    padding: 5px;
+    width: 45%;
+    margin: 0 auto;
+    font-size: 0.8em;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: none;
   }
 }

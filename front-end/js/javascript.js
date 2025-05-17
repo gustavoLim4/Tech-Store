@@ -9,9 +9,6 @@ function changeBanner() {
   // Incrementa o índice
   currentIndex = (currentIndex + 1) % totalItems;
 
-  // Adiciona a classe ativa ao próximo banner
-  items[currentIndex].classList.add("active");
-
   // Muda a posição do container para mostrar o banner ativo
   document.querySelector(
     ".carousel-container"
@@ -42,37 +39,36 @@ window.onload = function () {
   }
 };
 
-const carrossel = document.querySelector(".carrossel");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+function DadosFormContato() {
+  const nomeContato = document.querySelector("#NomeFormContato").value;
+  const emailContato = document.querySelector("#EmailFormContato").value;
+  const messageContato = document.querySelector("#MessageFormContato").value;
+  const messagem = document.querySelector("#messagem");
+  const formContato = document.querySelector("#formContato");
 
-function atualizarBotoes() {
-  // Se o scroll está no início, esconde o botão "Anterior"
-  if (carrossel.scrollLeft <= 0) {
-    prevBtn.style.display = "none";
-  } else {
-    prevBtn.style.display = "block";
-  }
+  if (nomeContato && emailContato && messageContato) {
+    messagem.innerText = "✅ Mensagem enviada!";
+    messagem.style.display = "block";
 
-  // Se o scroll chegou no final, esconde o botão "Próximo"
-  if (carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth) {
-    nextBtn.style.display = "none";
+    setTimeout(() => {
+      messagem.style.opacity = "1";
+    }, 10);
+
+    setTimeout(() => {
+      messagem.style.opacity = "0";
+      setTimeout(() => {
+        messagem.style.display = "none";
+      }, 500);
+    }, 2000);
+
+    formContato.reset();
   } else {
-    nextBtn.style.display = "block";
+    messagem.innerText = "❌ Preencha todos os campos!";
+    messagem.style.display = "block";
+
+    setTimeout(() => {
+      messagem.style.opacity = "1";
+    }, 10);
   }
+  console.log(nomeContato, emailContato, messageContato)
 }
-
-// Atualiza os botões ao clicar
-prevBtn.addEventListener("click", () => {
-  carrossel.scrollBy({ left: -310, behavior: "smooth" });
-});
-
-nextBtn.addEventListener("click", () => {
-  carrossel.scrollBy({ left: 310, behavior: "smooth" });
-});
-
-// Verifica sempre que houver rolagem no carrossel
-carrossel.addEventListener("scroll", atualizarBotoes);
-
-// Atualiza a visibilidade dos botões ao carregar a página
-atualizarBotoes();

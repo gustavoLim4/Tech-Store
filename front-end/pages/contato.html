@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsivo.css" />
     <title>Tech Store</title>
   </head>
   <body>
@@ -113,18 +112,21 @@
             </a>
           </div>
         </div>
-        <form action="" class="formulario-contato">
+        <form class="formulario-contato" id="formContato">
           <div class="input-contato">
-            <input type="text" placeholder="Nome :" />
-            <input type="text" placeholder="E-mail :" />
+            <input type="text" placeholder="Nome :" id="NomeFormContato" required/>
+            <input type="text" placeholder="E-mail :"  id="EmailFormContato" required/>
             <textarea
               type="text"
               name="message"
               placeholder="Mensagem:"
+              id="MessageFormContato"
+              required
             ></textarea>
+            <div id="messagem"></div>
           </div>
           <div class="formulario-button">
-            <button>Enviar</button>
+            <button type="button" onclick="DadosFormContato()">Enviar</button>
           </div>
         </form>
       </section>
@@ -223,5 +225,6 @@
         <h3>Copyright © 2025 Tech Store. Todos os Direitos Reservados</h3>
       </div>
     </footer>
+    <script src="../js/javascript.js"></script>
   </body>
 </html>
