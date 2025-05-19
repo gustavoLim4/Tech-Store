@@ -8,9 +8,10 @@
 .info-container {
   font-family: $font;
   h1 {
-    font-size: 3.4em;
+    font-size: 4em;
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 15px;
+    color: $primeira
   }
   h2 {
     font-size: 1.4em;
@@ -30,7 +31,7 @@
         width: 35px;
         height: 35px;
       }
-      color: $preto;
+      color: $primeira;
       &:hover {
         color: $segunda;
         @include transicao($tempo: 0.4s, $tipo: ease);

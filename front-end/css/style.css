@@ -488,9 +488,10 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 .info-container h1 {
-  font-size: 3.4em;
+  font-size: 4em;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: 15px;
+  color: #100d28;
 }
 .info-container h2 {
   font-size: 1.4em;
@@ -507,7 +508,7 @@ footer {
   margin: 20px 10px;
 }
 .info-container .links-contact a {
-  color: #000;
+  color: #100d28;
 }
 .info-container .links-contact a svg {
   width: 35px;
