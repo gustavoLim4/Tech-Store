@@ -70,5 +70,21 @@ function DadosFormContato() {
       messagem.style.opacity = "1";
     }, 10);
   }
-  console.log(nomeContato, emailContato, messageContato)
+  console.log(nomeContato, emailContato, messageContato);
 }
+
+document.querySelectorAll(".carrossel-container").forEach((container) => {
+  const carrossel = container.querySelector(".carrossel");
+  const btnPrev = container.querySelector(".prev");
+  const btnNext = container.querySelector(".next");
+
+  let scrollAmount = 0;
+
+  btnNext?.addEventListener("click", () => {
+    carrossel.scrollBy({ left: 300, behavior: "smooth" });
+  });
+
+  btnPrev?.addEventListener("click", () => {
+    carrossel.scrollBy({ left: -300, behavior: "smooth" });
+  });
+});
