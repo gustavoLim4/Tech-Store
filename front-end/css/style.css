@@ -732,4 +732,89 @@ footer {
   width: 10%;
 }
 
+.sobre-produto h2 {
+  margin: 0 100px 50px;
+  font-size: 2.5em;
+}
+
+.info-produtos {
+  margin: 0 100px 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.info-produtos h2 {
+  font-size: 1.9em;
+}
+.info-produtos p {
+  text-align: justify;
+  width: 65%;
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid #313131;
+}
+
+.info-produtos-conteudo {
+  margin: 0 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.info-produtos-conteudo h2 {
+  font-size: 1.9em;
+}
+.info-produtos-conteudo p {
+  text-align: justify;
+  width: 65%;
+  padding: 0 0 30px 0;
+}
+
+.opcoes-produtos h2 {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 50px 0;
+}
+.opcoes-produtos .produtos-cards {
+  display: flex;
+  margin: 0 auto;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.opcoes-produtos .produtos-cards .carrossel-item {
+  width: 25%;
+  padding: 15px;
+  border-bottom: 1px solid #8906e6;
+}
+.opcoes-produtos .produtos-cards .carrossel-item figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.opcoes-produtos .produtos-cards .carrossel-item .caixa-information {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.opcoes-produtos .produtos-cards .carrossel-item .caixa-information h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.opcoes-produtos .produtos-cards .carrossel-item .caixa-information p {
+  color: #313131;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.opcoes-produtos .produtos-cards .carrossel-item .caixa-information h4 {
+  color: #000;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.opcoes-produtos .produtos-cards .carrossel-item img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
