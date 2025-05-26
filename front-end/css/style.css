@@ -769,9 +769,9 @@ footer {
 }
 
 .opcoes-produtos h2 {
-  font-size: 1.9em;
+  font-size: 2em;
   text-align: center;
-  margin: 50px 0;
+  margin: 60px 0;
 }
 .opcoes-produtos .produtos-cards {
   display: flex;
@@ -779,7 +779,7 @@ footer {
   gap: 100px;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 50px 30px;
 }
 .opcoes-produtos .produtos-cards .carrossel-item {
   width: 25%;
@@ -795,6 +795,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  height: 150px;
 }
 .opcoes-produtos .produtos-cards .carrossel-item .caixa-information h3 {
   font-size: 1.6em;
@@ -815,6 +816,36 @@ footer {
 }
 .opcoes-produtos .produtos-cards .carrossel-item img {
   width: 100%;
+}
+
+.musica-container {
+  background-color: #f6f6f6;
+  padding: 50px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.musica-container .apple-musica {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 60px;
+}
+.musica-container .apple-musica img {
+  width: 20%;
+}
+.musica-container .apple-musica h1 {
+  font-size: 2.8em;
+  font-weight: bolder;
+  width: 70%;
+}
+.musica-container .img-musica {
+  display: flex;
+  justify-content: center;
+}
+.musica-container .img-musica img {
+  width: 65%;
 }
 
 /*# sourceMappingURL=style.css.map */
