@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>ViaCEP Webservice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- Inicio do formulario -->
+    <div id="topo"></div>
+    <form method="get">
+      <img src="https://aciah.org.br/material/busca-cep.png" alt="" />
+      <input
+        name="cep"
+        type="text"
+        id="cep"
+        value=""
+        size="10"
+        maxlength="9"
+        onblur="pesquisacep(this.value);"
+        placeholder="Cep: "
+      />
+      <input name="rua" type="text" id="rua" placeholder="Rua: " />
+      <input name="bairro" type="text" id="bairro" placeholder="Bairro:" />
+      <input name="cidade" type="text" id="cidade" placeholder="Cidade: " />
+      <input name="uf" type="text" id="uf" placeholder="Estado: " />
+      <input name="regiao" type="text" id="regiao" placeholder="Regiao: " />
+      <input name="ibge" type="text" id="ibge" placeholder="IBGE: " />
+      <input name="siafi" type="text" id="siafi" placeholder="Siafi: " />
+    </form>
+    <script src="js.js"></script>
+  </body>
+</html>
