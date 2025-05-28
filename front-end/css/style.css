@@ -592,90 +592,146 @@ footer {
   background: linear-gradient(340deg, #8906e6 0%, #c484f1 100%);
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  color: #100d28;
-}
-body header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-body header h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #100d28;
-  margin: 0;
-}
-body header h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #100d28;
-  cursor: pointer;
-  margin: 0;
-}
-
-main {
-  flex-grow: 1;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 13, 40, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 20px;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-main .carrinho {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 400px;
-  padding: 20px;
+
+.modal-overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cart-container {
+  background-color: #fff;
   border-radius: 8px;
-  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(16, 13, 40, 0.2);
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
 }
-main .carrinho .carrinho-img {
-  width: 100px;
-  height: auto;
-  filter: inver(15%) sepia(90%) saturate(1400%) hue-rotate(250deg) brightness(80%) contrast(100%);
+
+.modal-overlay.active .cart-container {
+  transform: translateY(0);
 }
-main .carrinho h1 {
-  font-size: 28px;
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.cart-header h2 {
   color: #100d28;
+  font-size: 1.5em;
   margin: 0;
-  align-items: center;
-  flex-direction: column;
 }
-main .carrinho h2 {
-  font-size: 18px;
-  color: #100d28;
-  margin: 0;
-  align-items: center;
-  flex-direction: column;
-}
-main .carrinho button {
-  background-color: #fff;
-  color: #c484f1;
-  border: 2px solid #c484f1;
-  padding: 12px 120px;
-  border-radius: 25px;
-  font-size: 20px;
-  align-items: center;
-  flex-direction: column;
+.cart-header .close-button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #a0a0a0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0 5px;
+  line-height: 1;
 }
-main .carrinho button:hover {
-  background-color: rgb(163.0547445255, 63.3175182482, 233.1824817518);
+.cart-header .close-button:hover {
+  color: #8906e6;
+}
+
+.cart-icon {
+  margin-bottom: 30px;
+}
+.cart-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.empty-cart-message h3 {
+  color: #100d28;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.empty-cart-message p {
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.explore-button {
+  background-color: #fff;
+  border: 2px solid #8906e6;
+  color: #8906e6;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.explore-button:hover {
+  background-color: #8906e6;
   color: #fff;
+  border-color: none;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-button .icon {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.2s ease-in-out;
+}
+.icon-button:hover .icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .cart-container {
+    width: 95%;
+    padding: 15px;
+  }
+  .cart-header h2 {
+    font-size: 1.3em;
+  }
+  .cart-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .empty-cart-message h3 {
+    font-size: 1.1em;
+  }
+  .explore-button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
