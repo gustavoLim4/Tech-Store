@@ -78,8 +78,6 @@ document.querySelectorAll(".carrossel-container").forEach((container) => {
   const btnPrev = container.querySelector(".prev");
   const btnNext = container.querySelector(".next");
 
-  let scrollAmount = 0;
-
   btnNext?.addEventListener("click", () => {
     carrossel.scrollBy({ left: 300, behavior: "smooth" });
   });
@@ -88,3 +86,4 @@ document.querySelectorAll(".carrossel-container").forEach((container) => {
     carrossel.scrollBy({ left: -300, behavior: "smooth" });
   });
 });
+

@@ -606,9 +606,12 @@ footer {
 .container-produto .container-imgs {
   width: 50%;
   display: flex;
-  justify-content: center;
+  margin: 20px 0 70px;
   align-items: center;
   flex-direction: column;
+  position: sticky;
+  top: 10px;
+  align-self: start;
 }
 .container-produto .container-imgs img {
   width: 70%;
@@ -619,6 +622,7 @@ footer {
 .container-produto .container-info {
   margin: 40px 0;
   width: 50%;
+  padding: 15px;
 }
 .container-produto .container-info h1 {
   color: #8906e6;
@@ -806,6 +810,7 @@ footer {
 .opcoes-produtos .produtos-cards .carrossel-item .caixa-information p {
   color: #313131;
   text-align: center;
+  height: 70px;
   margin-bottom: 10px;
 }
 .opcoes-produtos .produtos-cards .carrossel-item .caixa-information h4 {
