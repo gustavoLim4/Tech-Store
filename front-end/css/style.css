@@ -878,13 +878,14 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(16, 13, 40, 0.2);
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 1000px;
   padding: 20px;
   text-align: center;
   position: relative;
   transform: translateY(-20px);
   transition: transform 0.3s ease-in-out;
+  height: 450px;
 }
 
 .modal-overlay.active .cart-container {
@@ -900,7 +901,7 @@ footer {
   border-bottom: 1px solid #eee;
 }
 .cart-header h2 {
-  color: #100d28;
+  color: #8906e6;
   font-size: 1.5em;
   margin: 0;
 }
