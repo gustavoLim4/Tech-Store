@@ -542,18 +542,16 @@ footer {
 .formulario-contato .input-contato {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
   width: 100%;
 }
-.formulario-contato .input-contato input,
-.formulario-contato .input-contato textarea {
+.formulario-contato .input-contato input {
   border: none;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 10px;
   border-radius: 5px;
 }
-.formulario-contato .input-contato input:focus,
-.formulario-contato .input-contato textarea:focus {
+.formulario-contato .input-contato input:focus {
   outline: none;
   color: #000;
 }
@@ -993,6 +991,345 @@ footer {
   .explore-button {
     padding: 10px 20px;
     font-size: 0.9em;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8431372549);
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal .close-modal {
+  position: absolute;
+  top: 15px;
+  right: 22px;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+}
+.modal .close-modal:hover {
+  color: #8906e6;
+}
+
+.open-modal-btn {
+  margin: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #8906e6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container-modal-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.0078431373);
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 960px;
+  height: 70%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #8906e6;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  left: 0;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.title-primary {
+  color: #fff;
+}
+.title-second {
+  color: #8906e6;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 25px;
+}
+.description-primary {
+  color: #fff;
+}
+.description-second {
+  color: #fff;
+}
+
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: background-color 0.5s;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #8906e6;
+}
+.btn-second {
+  background-color: #8906e6;
+  border: 1px solid #8906e6;
+  transition: background-color 0.5s;
+}
+.btn-second:hover {
+  background-color: #fff;
+  color: #8906e6;
+}
+
+.btnEntrar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 10px 0;
+}
+.btnEntrar button {
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #8906e6;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.btnCadastrar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.btnCadastrar button {
+  font-weight: bold;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #8906e6;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.first-content {
+  display: flex;
+}
+.first-content .second-column {
+  z-index: 11;
+}
+
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+.first-column .avisos {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 10px;
+  top: 90px;
+  position: relative;
+  padding: 0 40px;
+}
+
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+}
+.form input {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+.form input:focus {
+  outline: none;
+  color: #000;
+}
+
+.nsm7Bb-HzV7m-LgbsSe {
+  border: none !important;
+  height: 45px !important;
+  padding: 10px !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+}
+.nsm7Bb-HzV7m-LgbsSe:focus {
+  outline: none !important;
+  color: #000 !important;
+}
+.nsm7Bb-HzV7m-LgbsSe:hover {
+  background-color: #8906e6 !important;
+  color: #fff !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+.second-content {
+  position: absolute;
+  display: flex;
+}
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+
+.sign-in-js .first-content .first-column {
+  z-index: -1;
+}
+.sign-in-js .first-content .second-column {
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 0.5s;
+}
+.sign-in-js .second-content .second-column {
+  z-index: 11;
+}
+.sign-in-js .second-content .first-column {
+  z-index: 13;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.sign-in-js .second-content .caixas {
+  margin: 0 0 35px;
+}
+.sign-in-js .content::before {
+  left: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation: slidein 1.3s;
+  z-index: 12;
+}
+
+.sign-up-js .content::before {
+  animation: slideout 1.3s;
+  z-index: 12;
+}
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+  z-index: -1;
+}
+.sign-up-js .second-content .second-column {
+  position: relative;
+  animation: deslocamentoDir 0.5s;
+}
+.sign-up-js .first-content .second-column {
+  z-index: 11;
+}
+.sign-up-js .first-content .first-column {
+  z-index: 13;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.sign-up-js .first-content .caixas {
+  margin: 0 0 35px;
+}
+
+@keyframes deslocamentoEsq {
+  0% {
+    left: 0;
+    opacity: 1;
+    z-index: 12;
+  }
+  100% {
+    left: -110px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes deslocamentoDir {
+  0% {
+    left: 0;
+    z-index: 12;
+  }
+  100% {
+    left: 110px;
+    z-index: -1;
+  }
+}
+@keyframes slidein {
+  0% {
+    left: 0;
+    width: 40%;
+  }
+  100% {
+    left: 60%;
+    width: 40%;
+  }
+}
+@keyframes slideout {
+  0% {
+    left: 60%;
+    width: 40%;
+  }
+  100% {
+    left: 0;
+    width: 40%;
   }
 }
 

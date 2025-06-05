@@ -11,7 +11,7 @@
     font-size: 4em;
     font-weight: 900;
     letter-spacing: 15px;
-    color: $primeira
+    color: $primeira;
   }
   h2 {
     font-size: 1.4em;
@@ -47,10 +47,9 @@
   .input-contato {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
-    input,
-    textarea {
+    input {
       border: none;
       @include sombra($preto, 0.2);
       padding: 10px;
