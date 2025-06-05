@@ -27,20 +27,6 @@ function handleCredentialResponse(response) {
     sessionStorage.setItem("userEmail", ResponstaJWT.email);
     sessionStorage.setItem("userImg", ResponstaJWT.picture);
 
-    // Esconder o ícone de login
-    const loginButton = document.getElementById("user-link");
-    if (loginButton) {
-      loginButton.style.display = "none"; // Esconde o link de login
-    }
-
-    // Exibir a mensagem de boas-vindas com o nome do usuário
-    const welcomeMessage = document.getElementById("welcome-message");
-    if (welcomeMessage) {
-      welcomeMessage.style.display = "block"; // Exibe a mensagem de boas-vindas
-      const userName = document.getElementById("user-name");
-      userName.textContent = ResponstaJWT.name; // Coloca o nome do usuário na mensagem
-    }
-
     // Redirecionar para a página principal (index.html)
     window.location.href = "../../../front-end/pages/index.html";
   } catch (error) {
@@ -141,7 +127,7 @@ window.onload = function () {
   // --- Lógica da Mensagem de Boas-vindas ---
   const userName = sessionStorage.getItem("userName");
   if (userName) {
-    const loginButton = document.getElementById("user");
+    const loginButton = document.getElementById("open-modal-btn");
     if (loginButton) {
       loginButton.style.display = "none";
     }

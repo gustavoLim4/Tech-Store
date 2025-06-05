@@ -61,7 +61,7 @@
     }
     textarea {
       resize: none;
-      height: 150px;
+      height: 150px;  
     }
   }
 
@@ -108,4 +108,7 @@
     transition: opacity 0.4s ease;
     display: none;
   }
+}
+#MessageForm {
+  
 }
