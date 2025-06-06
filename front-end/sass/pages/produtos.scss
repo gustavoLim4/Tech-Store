@@ -1,0 +1,345 @@
+// ===================================================================
+// === GLOBAIS E BASE ===
+// ===================================================================
+
+// Variáveis Globais
+$font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$text-color-primary: #1d1d1f; // Preto principal
+$text-color-secondary: #6e6e73; // Cinza para textos secundários
+$text-color-tertiary: #86868b;
+$link-color: #0071e3;
+$border-color-light: #d2d2d7;
+$background-color-page: #fff;
+$background-color-card: #fff;
+$container-max-width: 1180px;
+$carousel-card-gap: 16px;
+$section-padding-vertical: 40px;
+$section-padding-horizontal: 20px;
+
+// Mixin para o container
+@mixin content-wrapper {
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $section-padding-horizontal;
+  padding-right: $section-padding-horizontal;
+}
+
+// Estilos Base
+body {
+  font-family: $font-family-main;
+  color: $text-color-primary;
+  background-color: $background-color-page;
+  margin: 0;
+  padding: 0;
+  h1 {
+    color: #100D28;
+    text-decoration: bold;
+  }
+}
+
+main {
+  overflow-x: hidden;
+}
+
+// ESTILOS PARA O CONTEÚDO PRINCIPAL (MAIN) 
+
+// Hero Banner
+.hero-banner {
+  @include content-wrapper;
+  display: flex;
+  align-items: flex-start; // Alinha o texto no topo
+  justify-content: flex-start; // Alinha o texto à esquerda
+  padding: 80px $section-padding-horizontal; // Aumenta o padding para dar espaço ao texto
+  min-height: 400px; // Define uma altura mínima para a seção
+  background-image: url('/front-end/img/MagSafe-produtos.jpg'); // Define a imagem de fundo
+  background-size: cover; // Garante que a imagem cubra todo o espaço
+  background-position: center; // Centraliza a imagem
+  color: white; // Garante que o texto seja legível sobre a imagem
+  text-align: left; // Alinha o texto à esquerda
+  position: relative; // Cria um contexto de posicionamento para o texto
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0); // transparente
+  }
+
+  & > * {
+    z-index: 1; // Garante que o conteúdo (texto) fique acima da camada de fundo
+    position: relative; // Necessário para o z-index funcionar corretamente
+  }
+
+  &__text-column {
+    flex: 0 0 auto; // Ocupa apenas a largura do conteúdo
+    padding-right: 40px;
+    margin-bottom: 0; // Remove margem inferior desnecessária
+    h1 { font-size: 3em; font-weight: 600; margin: 0 0 0.5em 0; color: #100D28; }
+    p { font-size: 1.2em; color: #100D28; line-height: 1.6; margin-bottom: 1.5em; }
+    .btn {
+      font-size: 1.1em;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  &__image-column {
+    display: none; // A coluna da imagem não é mais necessária aqui
+  }
+}
+
+// Seção de Busca e Categorias
+.search-category-section {
+  @include content-wrapper;
+  text-align: center;
+  padding: $section-padding-vertical 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: $section-padding-vertical;
+
+  h3 { font-size: 1.6em; font-weight: 600; margin: 0 0 1.5em 0; }
+
+  .search-bar {
+    max-width: 580px;
+    margin: 0 auto 2.5em auto;
+    position: relative;
+    input {
+      width: 100%;
+      padding: 0.75em 1em 0.75em 2.5em;
+      border: 1px solid $border-color-light;
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    .Search-icon {
+      position: absolute;
+      left: 0.9em;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .categories-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .category-item {
+    cursor: pointer;
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      background-color: #f5f5f7;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 0.75em auto;
+      img { max-width: 50%; max-height: 50%; }
+    }
+    p { font-size: 0.9em; }
+  }
+}
+
+// Seções de Produtos (Carrosséis)
+.featured-products-section {
+  @include content-wrapper;
+  text-align: center;
+  padding: $section-padding-vertical 0;
+
+  h2 { font-size: 2em; font-weight: 600; margin-bottom: 20px; }
+  .more-products-link { display: inline-block; margin-top: 25px; color: $link-color; text-decoration: none; }
+}
+
+.product-carousel-wrapper { position: relative; }
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: $carousel-card-gap;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+  &::-webkit-scrollbar { display: none; }
+  padding: 10px;
+  margin: 0 -10px;
+}
+
+.product-card {
+  flex: 0 0 calc((100% - 2 * #{$carousel-card-gap}) / 3);
+  min-width: 280px;
+  scroll-snap-align: start;
+
+  background-color: $background-color-card;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(231, 231, 231);
+    color: $branco;
+    border: none;
+    padding: 10px 21px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 100%;
+    z-index: 99999;
+ }
+ 
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #c484f1;
+  }
+
+  .product-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  img { height: 160px; object-fit: contain; margin-bottom: 16px; }
+
+  .color-options { display: flex; justify-content: center; gap: 6px; margin-bottom: 12px; min-height: 18px; .color-dot { width: 12px; height: 12px; border-radius: 50%; }}
+
+  .product-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+  .new-tag, .product-tag { font-size: 0.8em; color: $text-color-secondary; margin-bottom: 8px; min-height: 1.2em; }
+
+  .product-name { font-size: 1em; font-weight: 500; margin: 4px 0; }
+
+  // --- NOVOS ESTILOS PARA OS PREÇOS ---
+  .price-container {
+      margin-top: auto; // Empurra o container de preços para o final do card
+      padding-top: 10px;
+  }
+
+  .original-price {
+      font-size: 0.85em;
+      color: $text-color-secondary;
+      text-decoration: none; // Garante que NÃO haja risco/linha
+      display: block; // Coloca em uma linha separada
+  }
+
+  .final-price {
+      font-size: 1em;
+      color: $text-color-primary; // Cor preta padrão
+      font-weight: 500;
+      display: block;
+  }
+
+}
+
+.carousel-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; background-color: rgba(240, 240, 240, 0.7);
+  border: none; border-radius: 50%; width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; font-size: 1.2em; color: #404040; backdrop-filter: blur(5px);
+  &.prev-arrow { left: -18px; }
+  &.next-arrow { right: -18px; }
+
+  &:hover{
+    cursor: pointer;
+    padding: 10px;
+    background-color:#c484f1;
+  }
+}
+
+.carousel-dots {
+  text-align: center; margin-top: 20px;
+  .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background-color: #d1d1d6; margin: 0 4px; &.active { background-color: #6e6e73; }}
+}
+
+
+// ===================================================================
+// === AJUSTES RESPONSIVOS (APENAS PARA O CONTEÚDO PRINCIPAL) ===
+// ===================================================================
+
+@media (max-width: 1024px) {
+  .hero-banner {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    padding: 60px $section-padding-horizontal;
+    min-height: 300px;
+    &__text-column {
+      padding-right: 0;
+      margin-bottom: 1em;
+      flex-basis: auto;
+    }
+  }
+
+  .product-card {
+    flex-basis: calc((100% - #{$carousel-card-gap}) / 2);
+    min-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 40px $section-padding-horizontal;
+    min-height: 250px;
+    h1 { font-size: 2em; }
+    p { font-size: 1em; }
+  }
+
+  .search-category-section {
+    h3 { font-size: 1.4em; }
+    .product-categories .categories-grid { gap: 20px; }
+    .category-item .icon-circle { width: 70px; height: 70px; }
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  .product-card {
+    flex-basis: 75%;
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-banner {
+    padding: 30px $section-padding-horizontal;
+    min-height: 200px;
+    h1 { font-size: 1.8em; }
+    p { font-size: 0.9em; }
+  }
+
+  .search-category-section h3 { font-size: 1.2em; }
+
+  .featured-products-section h2 {
+    font-size: 1.8em;
+  }
+
+  .product-card {
+    flex-basis: 85%;
+  }
+}

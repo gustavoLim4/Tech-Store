@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: url(https://i.redd.it/3dcjfz5xxyw21.png) no-repeat center;
+    display: flex; /* Adicionado para centralizar o container */
+    justify-content: center; /* Adicionado para centralizar o container */
+    align-items: flex-start; /* Alinha no topo se o conteúdo for menor que a tela */
+    min-height: 90vh; /* Garante que o body ocupe a altura da tela */
+}
+
+.container {
+    background-color: #ffffff15;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%; /* Ajustado para melhor responsividade */
+    max-width: 500px; /* Mantém a largura máxima */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* margin: auto; removido pois o body agora centraliza */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Adicionado espaço abaixo do título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle; /* Alinha o conteúdo da célula verticalmente */
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td input[type="number"] {
+    width: calc(100% - 18px); /* Ajustado para acomodar padding e borda */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para o cálculo da largura */
+}
+
+.label {
+    font-weight: bold;
+    color: #fef8f8;
+    width: 40%; /* Define uma largura para as labels para melhor alinhamento */
+}
+
+.result {
+    font-weight: bold;
+}
+
+.buy-recommendation {
+    color: #28a745; /* Verde para recomendação de compra */
+}
+
+.no-buy-recommendation {
+    color: #dc3545; /* Vermelho se não for necessário comprar */
+}
