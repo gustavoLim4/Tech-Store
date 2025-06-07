@@ -604,27 +604,46 @@ body h1 {
   text-decoration: bold;
 }
 
-main {
-  overflow-x: hidden;
+.sticky-subheader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.337254902);
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
-
-.hero-banner {
+.sticky-subheader__content {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+.sticky-subheader__content h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.hero-banner {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  padding: 80px 20px;
+  padding: 60px 20px;
   min-height: 400px;
   background-image: url("/front-end/img/MagSafe-produtos.jpg");
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
   background-size: cover;
   background-position: center;
-  color: white;
-  text-align: left;
-  position: relative;
 }
 .hero-banner::before {
   content: "";
@@ -640,20 +659,21 @@ main {
   position: relative;
 }
 .hero-banner__text-column {
-  flex: 0 0 auto;
+  flex: 1;
+  max-width: 500px;
   padding-right: 40px;
-  margin-bottom: 0;
 }
 .hero-banner__text-column h1 {
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 600;
-  margin: 0 0 0.5em 0;
+  line-height: 1;
+  margin: -18px 2px 0.4em 0;
   color: #100D28;
 }
 .hero-banner__text-column p {
   font-size: 1.2em;
   color: #100D28;
-  line-height: 1.6;
+  line-height: 0;
   margin-bottom: 1.5em;
 }
 .hero-banner__text-column .btn {

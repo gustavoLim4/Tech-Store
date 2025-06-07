@@ -38,6 +38,30 @@ body {
   }
 }
 
+// === SUB-CABEÇALHO STICKY ===
+// ===================================================================
+.sticky-subheader {
+  position: -webkit-sticky; // Para compatibilidade com Safari
+  position: sticky;
+  top: 0; // Fixa no topo da tela
+  background-color: #ffffff56; // Fundo branco para não ser transparente
+  z-index: 100; // Garante que ele fique sobre o resto do conteúdo
+  border-bottom: 1px solid #ddd; // A linha cinza sutil embaixo
+  padding: 10px 0; // Espaçamento vertical
+  
+  &__content {
+    @include content-wrapper; // Usa seu mixin para centralizar o conteúdo
+    
+    h2 {
+      margin: 0;
+      font-size: 1.2rem; // Tamanho da fonte para "Produtos"
+      font-weight: 600;
+      color: $text-color-primary;
+    }
+  }
+  
+}
+
 main {
   overflow-x: hidden;
 }
@@ -46,18 +70,22 @@ main {
 
 // Hero Banner
 .hero-banner {
-  @include content-wrapper;
+  //@include content-wrapper;
+  width: 100%;
   display: flex;
-  align-items: flex-start; // Alinha o texto no topo
+  align-items: center; // Alinha o texto no topo
   justify-content: flex-start; // Alinha o texto à esquerda
-  padding: 80px $section-padding-horizontal; // Aumenta o padding para dar espaço ao texto
+  padding: 60px $section-padding-horizontal; // Aumenta o padding para dar espaço ao texto
   min-height: 400px; // Define uma altura mínima para a seção
   background-image: url('/front-end/img/MagSafe-produtos.jpg'); // Define a imagem de fundo
+  background-color: $background-color-page;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
   background-size: cover; // Garante que a imagem cubra todo o espaço
   background-position: center; // Centraliza a imagem
-  color: white; // Garante que o texto seja legível sobre a imagem
-  text-align: left; // Alinha o texto à esquerda
-  position: relative; // Cria um contexto de posicionamento para o texto
+  //color: white; // Garante que o texto seja legível sobre a imagem
+  //text-align: left; // Alinha o texto à esquerda
+  //position: relative; // Cria um contexto de posicionamento para o texto
 
   &::before {
     content: '';
@@ -75,11 +103,23 @@ main {
   }
 
   &__text-column {
-    flex: 0 0 auto; // Ocupa apenas a largura do conteúdo
-    padding-right: 40px;
-    margin-bottom: 0; // Remove margem inferior desnecessária
-    h1 { font-size: 3em; font-weight: 600; margin: 0 0 0.5em 0; color: #100D28; }
-    p { font-size: 1.2em; color: #100D28; line-height: 1.6; margin-bottom: 1.5em; }
+    flex: 1; // Ocupa apenas a largura do conteúdo
+   max-width: 500px;
+   padding-right: 40px;
+    //margin-bottom: 0; // Remove margem inferior desnecessária
+    h1 { 
+      font-size: 2.8em; 
+      font-weight: 600; 
+      line-height: 1; 
+      margin: -18px 2px 0.4em 0; 
+      color: #100D28; 
+    }
+    p { 
+      font-size: 1.2em; 
+      color: #100D28; 
+      line-height: 0; 
+      margin-bottom: 1.5em; 
+    }
     .btn {
       font-size: 1.1em;
       color: white;
