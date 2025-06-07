@@ -1,8 +1,7 @@
-// ===================================================================
-// === GLOBAIS E BASE ===
-// ===================================================================
+//  GLOBAIS E BASE 
 
 // Variáveis Globais
+$header-height: 110px; // Altura do seu header (15px de padding + conteúdo)
 $font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $text-color-primary: #1d1d1f; // Preto principal
 $text-color-secondary: #6e6e73; // Cinza para textos secundários
@@ -16,13 +15,18 @@ $carousel-card-gap: 16px;
 $section-padding-vertical: 40px;
 $section-padding-horizontal: 20px;
 
+// Variáveis do seu CSS global para compatibilidade
+$primeira: #100d28; // Cor de fundo original do seu header
+$branco: #fff;
+$terceira: #c484f1; // Cor de hover dos links
+
 // Mixin para o container
 @mixin content-wrapper {
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
-  padding-left: $section-padding-horizontal;
-  padding-right: $section-padding-horizontal;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 // Estilos Base
@@ -32,34 +36,163 @@ body {
   background-color: $background-color-page;
   margin: 0;
   padding: 0;
-  h1 {
-    color: #100D28;
-    text-decoration: bold;
+  // Cria um espaço no topo da página para o header fixo não sobrepor o conteúdo
+  padding-top: $header-height;
+}
+
+// ESTILOS DO HEADER (ADAPTADOS DO SEU CSS GLOBAL) 
+header {
+  // Faz o header ficar fixo no topo
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200; // Camada mais alta para ficar sobre tudo
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $primeira; // Cor de fundo escura do seu header original
+  padding: 15px 0px;
+  height: $header-height;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 30%;
+  img {
+    width: 30%;
+    margin-left: 80px;
   }
 }
 
-// === SUB-CABEÇALHO STICKY ===
-// ===================================================================
+.nav-links {
+  list-style: none;
+  display: flex;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.234);
+  width: 35%;
+  margin-right: 30px;
+  justify-content: space-around;
+
+  a {
+    color: $branco;
+    font-size: 17px;
+    &:hover {
+      color: $terceira;
+      transition: 0.4s ease;
+    }
+  }
+
+  li:hover {
+    transition: 0.4s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px $terceira;
+    transition: 0.4s ease;
+  }
+}
+
+.buscar {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  position: relative; // Para posicionar o ícone da lupa
+
+  input {
+    padding: 11px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.234);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    margin-right: 20px;
+
+    &:hover {
+      box-shadow: 0 0 15px $terceira;
+      transition: 0.5s ease;
+    }
+
+    &:focus {
+      outline: none;
+      color: $branco;
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    // Posição ajustada para ficar dentro do input
+    right: 35px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  width: 17%;
+  gap: 10px;
+  justify-content: center;
+
+  .icon-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      line-height: 0;
+  }
+  
+  .icon {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.13);
+    padding: 5px;
+    border-radius: 50%;
+    
+    &:hover {
+      box-shadow: 0 0 15px #8906e6; // Cor do seu CSS
+      transition: 0.5s ease;
+      transform: scale(1.1);
+    }
+  }
+}
+
+//  SUB-CABEÇALHO STICKY (AJUSTADO PARA FUNCIONAR COM O HEADER) 
 .sticky-subheader {
-  position: -webkit-sticky; // Para compatibilidade com Safari
+  position: -webkit-sticky;
   position: sticky;
-  top: 0; // Fixa no topo da tela
-  background-color: #ffffff56; // Fundo branco para não ser transparente
-  z-index: 100; // Garante que ele fique sobre o resto do conteúdo
-  border-bottom: 1px solid #ddd; // A linha cinza sutil embaixo
-  padding: 10px 0; // Espaçamento vertical
+  // Ponto chave: gruda na tela ABAIXO do header principal
+  top: 0%;
+  background-color: rgba(255, 255, 255, 0.85); // Fundo sólido para não ser transparente
+  --webkit--backdrop--filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 100; // Camada inferior à do header
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
   
   &__content {
-    @include content-wrapper; // Usa seu mixin para centralizar o conteúdo
+    @include content-wrapper;
     
     h2 {
       margin: 0;
-      font-size: 1.2rem; // Tamanho da fonte para "Produtos"
+      font-size: 1.4rem;
       font-weight: 600;
-      color: $text-color-primary;
+      color: $primeira;
     }
   }
-  
 }
 
 main {
@@ -78,6 +211,7 @@ main {
   padding: 60px $section-padding-horizontal; // Aumenta o padding para dar espaço ao texto
   min-height: 400px; // Define uma altura mínima para a seção
   background-image: url('/front-end/img/MagSafe-produtos.jpg'); // Define a imagem de fundo
+  //background-repeat: no-repeat;
   background-color: $background-color-page;
   border-bottom: 1px solid #e8e8e8;
   box-sizing: border-box;
@@ -87,38 +221,29 @@ main {
   //text-align: left; // Alinha o texto à esquerda
   //position: relative; // Cria um contexto de posicionamento para o texto
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(128, 128, 128, 0); // transparente
-  }
-
-  & > * {
-    z-index: 1; // Garante que o conteúdo (texto) fique acima da camada de fundo
-    position: relative; // Necessário para o z-index funcionar corretamente
-  }
-
   &__text-column {
     flex: 1; // Ocupa apenas a largura do conteúdo
    max-width: 500px;
    padding-right: 40px;
+   margin: -18px 2px 0.4em 251px;
     //margin-bottom: 0; // Remove margem inferior desnecessária
     h1 { 
       font-size: 2.8em; 
       font-weight: 600; 
-      line-height: 1; 
-      margin: -18px 2px 0.4em 0; 
+      line-height: 1.1; 
+      //margin: -18px 2px 0.4em 251px; 
       color: #100D28; 
     }
     p { 
-      font-size: 1.2em; 
+      font-size: 1em; 
       color: #100D28; 
       line-height: 0; 
       margin-bottom: 1.5em; 
+      //margin: 26px -106px 0.4em 200px;
+    }
+    a {
+      //margin: 26px 0px 0.4em 200px;
+      line-height: 3;
     }
     .btn {
       font-size: 1.1em;
@@ -148,7 +273,11 @@ main {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: $section-padding-vertical;
 
-  h3 { font-size: 1.6em; font-weight: 600; margin: 0 0 1.5em 0; }
+  h3 { 
+    font-size: 1.6em; 
+    font-weight: 600;
+     margin: 0 0 1.5em 0; 
+    }
 
   .search-bar {
     max-width: 580px;
@@ -224,7 +353,7 @@ main {
 
   background-color: $background-color-card;
   border: 1px solid #e8e8e8;
-  border-radius: 12px;
+  border-radius: 18px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   .button {
@@ -249,19 +378,37 @@ main {
   }
 
   .product-link {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: inherit;
     height: 100%;
-    padding: 24px;
+    padding: 64px;
     box-sizing: border-box;
   }
 
-  img { height: 160px; object-fit: contain; margin-bottom: 16px; }
+  img { 
+    height: 176px; 
+    object-fit: contain; 
+    margin-bottom: 20px; 
+  }
 
-  .color-options { display: flex; justify-content: center; gap: 6px; margin-bottom: 12px; min-height: 18px; .color-dot { width: 12px; height: 12px; border-radius: 50%; }}
+  .color-options { 
+    display: flex; 
+    justify-content: center; 
+    gap: 6px; 
+    margin-bottom: 12px; 
+    min-height: 18px; 
+    .color-dot { 
+      width: 12px; 
+      height: 12px; 
+      border-radius: 50%; 
+    }
+    .plus-btn {
+      display: flex;
+    }
+  }
 
   .product-info-wrapper {
       display: flex;
@@ -271,9 +418,17 @@ main {
       text-align: center;
     }
 
-  .new-tag, .product-tag { font-size: 0.8em; color: $text-color-secondary; margin-bottom: 8px; min-height: 1.2em; }
+  .new-tag, .product-tag { 
+    font-size: 0.8em; 
+    color: #c484f1; 
+    margin-bottom: 8px; 
+    min-height: 1.2em; 
+  }
 
-  .product-name { font-size: 1em; font-weight: 500; margin: 4px 0; }
+  .product-name { 
+    font-size: 1em; 
+    font-weight: 500; 
+    margin: 4px -1px; }
 
   // --- NOVOS ESTILOS PARA OS PREÇOS ---
   .price-container {
@@ -317,9 +472,7 @@ main {
 }
 
 
-// ===================================================================
-// === AJUSTES RESPONSIVOS (APENAS PARA O CONTEÚDO PRINCIPAL) ===
-// ===================================================================
+// AJUSTES RESPONSIVOS (APENAS PARA O CONTEÚDO PRINCIPAL)
 
 @media (max-width: 1024px) {
   .hero-banner {
