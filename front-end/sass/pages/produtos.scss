@@ -392,7 +392,8 @@ main {
   img { 
     height: 204px; 
     object-fit: contain; 
-    margin-bottom: 20px; 
+    //margin-bottom: 20px; 
+    margin: 0 -20px 20px;
   }
 
   .color-options { 
