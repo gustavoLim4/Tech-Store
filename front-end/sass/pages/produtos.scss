@@ -231,13 +231,19 @@ main {
       font-size: 2.8em; 
       font-weight: 600; 
       line-height: 1.1; 
-      margin: 0 0 20px; 
+      margin: 0 119px 20px; 
       color: #100D28; 
+      text-align: left;
+    }
+    .texto-p {
+      margin: 0 119px 20px;
+      text-align: left;
     }
     
-    a {
-      //margin: 26px 0px 0.4em 200px;
-      line-height: 3;
+    .botao-magsafe {
+      margin: 0 119px 20px;
+      line-height: 2;
+      text-align: left;
     }
     .btn {
       font-size: 1.1em;
@@ -384,7 +390,7 @@ main {
   }
 
   img { 
-    height: 176px; 
+    height: 204px; 
     object-fit: contain; 
     margin-bottom: 20px; 
   }
