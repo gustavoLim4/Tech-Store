@@ -115,6 +115,7 @@ a {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.13);
   padding: 5px;
   border-radius: 50%;
+  display: block;
 }
 .icon:hover {
   box-shadow: 0 0 15px #8906e6;
