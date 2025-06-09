@@ -1,7 +1,25 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: $font;
+  box-sizing: inherit;
+  font: inherit;
   font-weight: 400;
+  font-synthesis: none;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+a{
+  text-decoration: none;
 }

@@ -1,3 +1,13 @@
 @import "variavel";
 @import "mixin";
 @import "reset";
+@import "pages/index";
+@import "pages/contato";
+@import "pages/store/AirPods";
+@import "pages/carrinho";
+@import "pages/login";
+
+
+// Usar o sass compilado com css do front-end 
+//sass --watch front-end\sass\main.scss:front-end\css\style.css
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type= "image/png" href="../img/favicon.png">
+    <link rel="stylesheet" href=" ../css/style.css">
+    <title>Tech Store</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html" aria-label="Página inicial">
+              <img
+                src="../img/logoescura.png"
+                alt="Logo da Tech Store"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+          <div class="buscar">
+            <input type="text" />
+            <img src="../img/buscar.png" alt="" />
+          </div>
+          <div class="nav-icons">
+            <!-- Ícone de carrinho (permanece visível) -->
+            <a href="#cart" aria-label="Carrinho de compras">
+              <img
+                src="../img/carrinho.png"
+                alt="Ícone de carrinho"
+                class="icon"
+                id="carrinho"
+              />
+            </a>
+            <!-- Ícone de usuário (será ocultado após login) -->
+            <a
+              href="../pages/Login/Entrar.html"
+              id="user"
+              aria-label="Área do usuário"
+            >
+              <img
+                src="../img/user.png"
+                alt="Ícone de usuário"
+                class="icon"
+                id="user-icon"
+              />
+            </a>
+            <!-- Mensagem de boas-vindas (oculta inicialmente) -->
+            <div id="message" class="logado" style="display: none">
+              <p onclick="">Olá, <span id="name-user"></span>!</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+</body>
+</html>
