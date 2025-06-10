@@ -30,21 +30,19 @@
           <img src="../../img/buscar.png" alt="" />
         </div>
         <div class="nav-icons">
-          <!-- Ícone de carrinho (permanece visível) -->
-          <a href="../carrinhoteste.html" aria-label="Carrinho de compras">
+          <button
+            id="openCartModal"
+            class="icon-button"
+            aria-label="Abrir carrinho de compras"
+          >
             <img
               src="../../img/carrinho.png"
               alt="Ícone de carrinho"
               class="icon"
               id="carrinho"
             />
-          </a>
-          <!-- Ícone de usuário (será ocultado após login) -->
-          <a
-            href="../pages/Login/Entrar.html"
-            id="user"
-            aria-label="Área do usuário"
-          >
+          </button>
+          <a id="open-modal-btn" aria-label="Área do usuário">
             <img
               src="../../img/user.png"
               alt="Ícone de usuário"
@@ -52,13 +50,13 @@
               id="user-icon"
             />
           </a>
-          <!-- Mensagem de boas-vindas (oculta inicialmente) -->
           <div id="message" class="logado" style="display: none">
             <p onclick="">Olá, <span id="name-user"></span>!</p>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
       <section class="container-produto">
         <div class="container-imgs">
@@ -138,8 +136,9 @@
         <div class="info-produtos-conteudo">
           <h2>Conteúdo da caixa</h2>
           <p>
-            AirPods Pto 2 com Cancelamento Ativo de Ruído Estojo de recarga (USB-C)
-            com alto-falante Cabo para recarga com conector USB-C Documentação.
+            AirPods Pto 2 com Cancelamento Ativo de Ruído Estojo de recarga
+            (USB-C) com alto-falante Cabo para recarga com conector USB-C
+            Documentação.
           </p>
         </div>
       </section>
@@ -166,9 +165,7 @@
                 </figure>
                 <div class="caixa-information">
                   <h3>Beats Solo 4</h3>
-                  <p>
-                    O próximo passo em som e conforto.
-                  </p>
+                  <p>O próximo passo em som e conforto.</p>
                   <h4>R$ 899,50</h4>
                 </div>
               </a>
@@ -297,7 +294,96 @@
         <h3>Copyright © 2025 Tech Store. Todos os Direitos Reservados</h3>
       </div>
     </footer>
+    <!--            começo modal carrinho        -->
+    <div class="modal-overlay" id="cartModal">
+      <div class="cart-container">
+        <div class="cart-header">
+          <h2>Carrinho</h2>
+          <button class="close-button" id="closeCartModal">×</button>
+        </div>
 
+        <div class="cart-icon">
+          <img src="../../img/cart2.png" alt="Carrinho de Compras Vazio" />
+        </div>
+        <div class="empty-cart-message">
+          <h3>Desculpe, você não tem produtos aqui</h3>
+          <p>
+            Volte e explore para adicionar produtos no seu carrinho de compras.
+          </p>
+        </div>
+        <a href="produtos.html" class="explore-button" id="exploreShopButton">
+          Explorar loja
+        </a>
+      </div>
+    </div>
+    <!--            fim modal carrinho        -->
+
+    <!--            começo modal login/cadastro        -->
+    <div class="modal" id="loginModal">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <div class="container-modal-login">
+        <div class="content first-content">
+          <div class="first-column">
+            <div class="caixas">
+              <h2 class="title title-primary">Casdastrar</h2>
+              <p class="description description-primary">Cadastre sua conta!</p>
+            </div>
+            <button id="signin" class="btn btn-primary">Cadastro</button>
+            <p class="avisos">
+              Aperte o botão para preencher o formulario de cadastro.
+            </p>
+          </div>
+          <div class="second-column">
+            <h2 class="title title-second">Login</h2>
+            <form class="form">
+              <input type="email" placeholder="Email :" />
+              <input type="password" placeholder="Senha :" />
+              <div class="btnEntrar">
+                <button>Login</button>
+              </div>
+              <a
+                id="g_id_onload"
+                data-client_id="40004211622-0l7i8k953opa4ij23pi5boqvgunrsb1r.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse"
+                data-auto_prompt="false"
+              >
+                <div class="g_id_signin" data-type="standard"></div>
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <div class="content second-content">
+          <div class="first-column">
+            <div class="caixas">
+              <h2 class="title title-primary">Login</h2>
+              <p class="description description-primary">
+                Faça login com sua conta cadastrada!
+              </p>
+            </div>
+            <button id="signup" class="btn btn-primary">Logar</button>
+            <p class="avisos">
+              Aperte o botão para logar com sua conta cadastrada.
+            </p>
+          </div>
+          <div class="second-column">
+            <h2 class="title title-second">Cadastrar</h2>
+
+            <form class="form">
+              <input type="name" placeholder="Nome :" />
+              <input type="email" placeholder="Email :" />
+              <input type="password" placeholder="Senha :" />
+              <input type="password" placeholder="Senha novamente :" />
+              <div class="btnCadastrar">
+                <button>Cadastrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--            final modal login/cadastro        -->
     <script src="../../js/javascript.js"></script>
   </body>
 </html>

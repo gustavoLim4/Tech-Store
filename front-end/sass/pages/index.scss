@@ -99,6 +99,7 @@
   @include sombra($branco, 0.13);
   padding: 5px;
   @include bordas-arredondadas(50%);
+  display: block;
 
   &:hover {
     @include sombra($segunda, 100);

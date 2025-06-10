@@ -42,11 +42,7 @@
               id="carrinho"
             />
           </button>
-          <a
-            href="../pages/Login/Entrar.html"
-            id="user"
-            aria-label="Área do usuário"
-          >
+          <a id="open-modal-btn" aria-label="Área do usuário"  class="botao-login">
             <img
               src="../img/user.png"
               alt="Ícone de usuário"
@@ -59,7 +55,6 @@
           </div>
         </div>
       </nav>
-
     </header>
 
     <main>
@@ -153,7 +148,7 @@
                     <h2>R$ 999,50</h2>
                   </div>
                 </a>
-              </div>  
+              </div>
               <div class="carrossel-item">
                 <a href="../pages/store/AirPods2.html" class="caixa-sombra">
                   <figure>
@@ -438,7 +433,7 @@
         <h3>Copyright © 2025 Tech Store. Todos os Direitos Reservados</h3>
       </div>
     </footer>
-
+    <!--            começo modal carrinho        -->
     <div class="modal-overlay" id="cartModal">
       <div class="cart-container">
         <div class="cart-header">
@@ -451,14 +446,91 @@
         </div>
         <div class="empty-cart-message">
           <h3>Desculpe, você não tem produtos aqui</h3>
-          <p>Volte e explore para adicionar produtos no seu carrinho de compras.</p>
+          <p>
+            Volte e explore para adicionar produtos no seu carrinho de compras.
+          </p>
         </div>
         <a href="produtos.html" class="explore-button" id="exploreShopButton">
           Explorar loja
         </a>
       </div>
     </div>
+    <!--            fim modal carrinho        -->
 
+    <!--            começo modal login/cadastro        -->
+    <div class="modal" id="loginModal">
+      <button class="close-modal" id="closeModal">&times;</button>
+      <div class="container-modal-login">
+        <div class="content first-content">
+          <div class="first-column">
+            <div class="caixas">
+              <h2 class="title title-primary">Casdastrar</h2>
+              <p class="description description-primary">Cadastre sua conta!</p>
+            </div>
+            <button id="signin" class="btn btn-primary">Cadastro</button>
+            <p class="avisos">
+              Aperte o botão para preencher o formulario de cadastro.
+            </p>
+          </div>
+          <div class="second-column">
+            <h2 class="title title-second">Login</h2>
+            <form class="form">
+              <input type="email" placeholder="Email :" />
+              <input type="password" placeholder="Senha :" />
+              <div class="btnEntrar">
+                <button>Login</button>
+              </div>
+              <a
+                id="g_id_onload"
+                data-client_id="40004211622-0l7i8k953opa4ij23pi5boqvgunrsb1r.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse"
+              >
+                <div
+                  class="g_id_signin"
+                  data-type="standard"
+                  data-size="large"
+                  data-theme="outline"
+                  data-text="sign_in_with"
+                  data-shape="rectangular"
+                  data-logo_alignment="left"
+                ></div>
+              </a>
+            </form>
+          </div>
+        </div>
+
+        <div class="content second-content">
+          <div class="first-column">
+            <div class="caixas">
+              <h2 class="title title-primary">Login</h2>
+              <p class="description description-primary">
+                Faça login com sua conta cadastrada!
+              </p>
+            </div>
+            <button id="signup" class="btn btn-primary">Logar</button>
+            <p class="avisos">
+              Aperte o botão para logar com sua conta cadastrada.
+            </p>
+          </div>
+          <div class="second-column">
+            <h2 class="title title-second">Cadastrar</h2>
+
+            <form class="form">
+              <input type="name" placeholder="Nome :" />
+              <input type="email" placeholder="Email :" />
+              <input type="password" placeholder="Senha :" />
+              <input type="password" placeholder="Senha novamente :" />
+              <div class="btnCadastrar">
+                <button>Cadastrar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--            final modal login/cadastro        -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="../js/javascript.js"></script>
   </body>
 </html>
