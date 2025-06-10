@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Tech Store - Produtos</title>
-</head>
-<body>
-      <header>
+  </head>
+  <body>
+    <header>
       <nav class="navbar">
         <div class="logo">
           <a href="index.html" aria-label="Página inicial">
@@ -62,114 +62,372 @@
     </header>
 
     <div class="sticky-subheader">
-    <div class="sticky-subheader__content">
+      <div class="sticky-subheader__content">
         <h2>Produtos</h2>
+      </div>
     </div>
-</div>
 
-<main>
-        <section class="hero-banner">
-            <div class="hero-banner__text-column">
-              <h1>Mágicos e magnéticos.</h1> 
-              <div class="texto-p"> 
-                <p>Encontre a capa, carteira ou carregador MagSafe ideal para você.</p>
+    <main>
+      <section class="hero-banner">
+        <div class="hero-banner__text-column">
+          <h1>Mágicos e magnéticos.</h1>
+          <div class="texto-p">
+            <p>
+              Encontre a capa, carteira ou carregador MagSafe ideal para você.
+            </p>
+          </div>
+          <div class="magsafe-content">
+            <a href="produtos.html" class="botao-magsafe"
+              >Comprar acessórios MagSafe ></a
+            >
+          </div>
+        </div>
+        <div class="hero-banner__image-column">
+          <div class="magsafe-image"></div>
+          <img src="../img/MagSafe-produtos.jpg" />
+        </div>
+      </section>
+
+      <section class="search-category-section">
+        <h3>Encontre os acessórios que você procura.</h3>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar produtos" />
+          <img
+            src="../img/search (4).png"
+            alt="Search-icon"
+            class="Search-icon"
+          />
+        </div>
+        <div class="product-categories">
+          <div class="categories-grid">
+            <div class="category-item">
+              <div class="icon-circle">
+                <img src="../img/icon-mac.png" alt="Mac" />
               </div>
-                <div class="magsafe-content">
-                    <a href="produtos.html" class="botao-magsafe">Comprar acessórios MagSafe ></a>
-                </div>
+              <p>Mac</p>
             </div>
-            <div class="hero-banner__image-column">
-                <div class="magsafe-image"></div>
-                <img src="../img/Produtos-magSafe -.jpg" />
+            <div class="category-item">
+              <div class="icon-circle">
+                <img src="../img/icon-iphone.png" alt="iPhone" />
+              </div>
+              <p>iPhone</p>
             </div>
-        </section>
+            <div class="category-item">
+              <div class="icon-circle">
+                <img src="../img/icon-beats.png" alt="Beats by Dr. Dre" />
+              </div>
+              <p>Beats by Dr. Dre</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="search-category-section">
-            <h3>Encontre os acessórios que você procura.</h3>
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar produtos">
-                <img src="../img/search (4).png" alt="Search-icon" class="Search-icon" />
+      <section class="featured-products-section">
+        <h2>Destaques de iPhones</h2>
+        <div class="product-carousel-wrapper">
+          <!--<button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
+          <div class="product-carousel">
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/iphone16-padrao-padrao.png" alt="iPhone 16" />
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">iPhone 16</p>
+                  <p class="product-description">A partir de R$ 649,92/mês</p>
+                  <p class="product-price">ou R$ 7.799</p>
+                </div></a
+              >
             </div>
-            <div class="product-categories">
-                <div class="categories-grid">
-                    <div class="category-item">
-                        <div class="icon-circle"><img src="../img/icon-mac.png" alt="Mac"></div>
-                        <p>Mac</p>
-                    </div>
-                    <div class="category-item">
-                        <div class="icon-circle"><img src="../img/icon-iphone.png" alt="iPhone"></div>
-                        <p>iPhone</p>
-                    </div>
-                    <div class="category-item">
-                        <div class="icon-circle"><img src="../img/icon-beats.png" alt="Beats by Dr. Dre"></div>
-                        <p>Beats by Dr. Dre</p>
-                    </div>
-                </div>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/iphone16pro-padrao.png" alt="iPhone 16 Pro" />
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">iPhone 16 Pro</p>
+                  <p class="product-description">A partir de R$ 874,92/mês</p>
+                  <p class="product-price">ou R$ 10.499</p>
+                </div></a
+              >
             </div>
-        </section>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/iphone16e-padrao.png" alt="iPhone 16e" />
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">iPhone 16e</p>
+                  <p class="product-description">A partir de R$ 483,25/mês</p>
+                  <p class="product-price">ou R$ 5.799</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <button class="carousel-arrow next-arrow" aria-label="Próximo">
+            ›
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span><span class="dot"></span
+          ><span class="dot"></span>
+        </div>
+        <a href="produtos.html" class="more-products-link"
+          >Comprar todos os iPhones ></a
+        >
+      </section>
 
-        <section class="featured-products-section">
-            <h2>Destaques de iPhones</h2>
-            <div class="product-carousel-wrapper">
-                <!--<button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
-                <div class="product-carousel">
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/iphone16-padrao-padrao.png" alt="iPhone 16"><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">iPhone 16</p><p class="product-description">A partir de R$ 649,92/mês</p><p class="product-price">ou R$ 7.799</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/iphone16pro-padrao.png" alt="iPhone 16 Pro"><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">iPhone 16 Pro</p><p class="product-description">A partir de R$ 874,92/mês</p><p class="product-price">ou R$ 10.499</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/iphone16e-padrao.png" alt="iPhone 16e"><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">iPhone 16e</p><p class="product-description">A partir de R$ 483,25/mês</p><p class="product-price">ou R$ 5.799</p></div></a></div>
+      <section class="featured-products-section iphone-accessories">
+        <h2>Acessórios em destaque para iPhone</h2>
+        <div class="product-carousel-wrapper">
+          <!--  <button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
+          <div class="product-carousel">
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/Case-rosa-iphone16.png"
+                  alt="Capa de silicone iPhone"
+                />
+                <div class="color-options">
+                  <span
+                    class="color-dot"
+                    style="background-color: #f7acb0"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #a7cff5"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #a2d2c1"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #f8c8a0"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #c0b8e0"
+                  ></span>
+                  <div class="plus-btn"><span class="plus">+</span></div>
                 </div>
-                <button class="carousel-arrow next-arrow" aria-label="Próximo">›</button>
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">
+                    Capa de silicone com MagSafe para iPhone 16 Plus -
+                    Rosa-Peônia
+                  </p>
+                  <p class="product-price">R$ 589,00</p>
+                </div></a
+              >
             </div>
-            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
-            <a href="produtos.html" class="more-products-link">Comprar todos os iPhones ></a>
-        </section>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/capatransparente-iphone16pro.png"
+                  alt="Capa transparente iPhone 16 Pro"
+                />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">
+                    Capa transparente com MagSafe para iPhone 16 Pro
+                  </p>
+                  <p class="product-price">R$ 569,00</p>
+                </div></a
+              >
+            </div>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/case-azul-iphone16e.png"
+                  alt="Capa de silicone iPhone 16e"
+                />
+                <div class="color-options">
+                  <span
+                    class="color-dot"
+                    style="background-color: #a0b0d1"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #efc9c7"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #bfd8c1"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #5e5e5e"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #d94f4f"
+                  ></span>
+                </div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">
+                    Capa de silicone para iPhone 16e - Azul-inverno
+                  </p>
+                  <p class="product-price">R$ 449,00</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <button class="carousel-arrow next-arrow" aria-label="Próximo">
+            ›
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span><span class="dot"></span
+          ><span class="dot"></span>
+        </div>
+        <a href="produtos.html" class="more-products-link"
+          >Comprar acessórios para iPhone ></a
+        >
+      </section>
 
-        <section class="featured-products-section iphone-accessories">
-            <h2>Acessórios em destaque para iPhone</h2>
-            <div class="product-carousel-wrapper">
-               <!--  <button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
-                <div class="product-carousel">
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/Case-rosa-iphone16.png" alt="Capa de silicone iPhone"><div class="color-options"><span class="color-dot" style="background-color: #F7ACB0;"></span><span class="color-dot" style="background-color: #A7CFF5;"></span><span class="color-dot" style="background-color: #A2D2C1;"></span><span class="color-dot" style="background-color: #F8C8A0;"></span><span class="color-dot" style="background-color: #C0B8E0;"></span><div class="plus-btn"><span class="plus">+</span></div></div><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">Capa de silicone com MagSafe para iPhone 16 Plus - Rosa-Peônia</p><p class="product-price">R$ 589,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/capatransparente-iphone16pro.png" alt="Capa transparente iPhone 16 Pro"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">Capa transparente com MagSafe para iPhone 16 Pro</p><p class="product-price">R$ 569,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/case-azul-iphone16e.png" alt="Capa de silicone iPhone 16e"><div class="color-options"><span class="color-dot" style="background-color: #A0B0D1;"></span><span class="color-dot" style="background-color: #EFC9C7;"></span><span class="color-dot" style="background-color: #BFD8C1;"></span><span class="color-dot" style="background-color: #5E5E5E;"></span><span class="color-dot" style="background-color: #D94F4F;"></span></div><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">Capa de silicone para iPhone 16e - Azul-inverno</p><p class="product-price">R$ 449,00</p></div></a></div>
-                </div>
-                <button class="carousel-arrow next-arrow" aria-label="Próximo">›</button>
+      <section class="featured-products-section mac-accessories">
+        <h2>Acessórios em destaque para Mac</h2>
+        <div class="product-carousel-wrapper">
+          <!--<button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button>-->
+          <div class="product-carousel">
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/displayMac.png" alt="Studio Display" />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag"></span>
+                  <p class="product-name">Studio Display</p>
+                  <p class="product-price">R$ 18.999,00</p>
+                </div></a
+              >
             </div>
-            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
-            <a href="produtos.html" class="more-products-link">Comprar acessórios para iPhone ></a>
-        </section>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/magicKeyBoard.png" alt="Magic Keyboard" />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag"></span>
+                  <p class="product-name">
+                    Magic Keyboard com Touch ID e teclado numérico
+                  </p>
+                  <p class="product-price">R$ 2.199,00</p>
+                </div></a
+              >
+            </div>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img src="../img/magicMouse.png" alt="Magic Mouse" />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag"></span>
+                  <p class="product-name">Magic Mouse</p>
+                  <p class="product-price">R$ 1.099,00</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <button class="carousel-arrow next-arrow" aria-label="Próximo">
+            ›
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span><span class="dot"></span
+          ><span class="dot"></span>
+        </div>
+        <a href="produtos.html" class="more-products-link"
+          >Comprar acessórios para Mac ></a
+        >
+      </section>
 
-        <section class="featured-products-section mac-accessories">
-            <h2>Acessórios em destaque para Mac</h2>
-            <div class="product-carousel-wrapper">
-                <!--<button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button>-->
-                <div class="product-carousel">
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/displayMac.png" alt="Studio Display"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag"></span><p class="product-name">Studio Display</p><p class="product-price">R$ 18.999,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/magicKeyBoard.png" alt="Magic Keyboard"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag"></span><p class="product-name">Magic Keyboard com Touch ID e teclado numérico</p><p class="product-price">R$ 2.199,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/magicMouse.png" alt="Magic Mouse"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag"></span><p class="product-name">Magic Mouse</p><p class="product-price">R$ 1.099,00</p></div></a></div>
-                </div>
-                <button class="carousel-arrow next-arrow" aria-label="Próximo">›</button>
+      <section class="featured-products-section audio-highlights">
+        <h2>Acessórios de Áudio</h2>
+        <div class="product-carousel-wrapper">
+          <!--  <button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
+          <div class="product-carousel">
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/airpods-pro-2-hero-select-202409.png"
+                  alt="AirPods Pro 2"
+                />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">
+                    AirPods Pro (2ª geração) com estojo de recarga MagSafe
+                    (USB-C)
+                  </p>
+                  <p class="product-price">R$ 2.599,00</p>
+                </div></a
+              >
             </div>
-            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
-            <a href="produtos.html" class="more-products-link">Comprar acessórios para Mac ></a>
-        </section>
-
-        <section class="featured-products-section audio-highlights">
-            <h2>Acessórios de Áudio</h2>
-            <div class="product-carousel-wrapper">
-               <!--  <button class="carousel-arrow prev-arrow" aria-label="Anterior">‹</button> -->
-                <div class="product-carousel">
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/airpods-pro-2-hero-select-202409.png" alt="AirPods Pro 2"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">AirPods Pro (2ª geração) com estojo de recarga MagSafe (USB-C)</p><p class="product-price">R$ 2.599,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/airpods-4-anc-select-202409.png" alt="AirPods 4"><div class="color-options"></div><div class="product-info-wrapper"><span class="new-tag">Novo</span><p class="product-name">AirPods (4ª geração) com Cancelamento Ativo de Ruído</p><p class="product-price">R$ 1.999,00</p></div></a></div>
-                    <div class="product-card"><a href="" class="product-link"><img src="../img/airpods-max-select-202409-midnight.png" alt="AirPods Max"><div class="color-options"><span class="color-dot" style="background-color: #5C5B57;"></span><span class="color-dot" style="background-color: #E2E2E2;"></span><span class="color-dot" style="background-color: #A6C2E4;"></span><span class="color-dot" style="background-color: #E7A0A1;"></span><span class="color-dot" style="background-color: #A5D7C1;"></span></div><div class="product-info-wrapper"><span class="product-tag">Novas Cores</span><p class="product-name">AirPods Max - Meia-noite</p><p class="product-price">R$ 6.599,00</p></div></a></div>
-                </div>
-                <button class="carousel-arrow next-arrow" aria-label="Próximo">›</button>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/airpods-4-anc-select-202409.png"
+                  alt="AirPods 4"
+                />
+                <div class="color-options"></div>
+                <div class="product-info-wrapper">
+                  <span class="new-tag">Novo</span>
+                  <p class="product-name">
+                    AirPods (4ª geração) com Cancelamento Ativo de Ruído
+                  </p>
+                  <p class="product-price">R$ 1.999,00</p>
+                </div></a
+              >
             </div>
-            <div class="carousel-dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
-            <a href="produtos.html" class="more-products-link">Comprar fones de ouvido e caixas de som ></a>
-        </section>
+            <div class="product-card">
+              <a href="" class="product-link"
+                ><img
+                  src="../img/airpods-max-select-202409-midnight.png"
+                  alt="AirPods Max"
+                />
+                <div class="color-options">
+                  <span
+                    class="color-dot"
+                    style="background-color: #5c5b57"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #e2e2e2"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #a6c2e4"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #e7a0a1"
+                  ></span
+                  ><span
+                    class="color-dot"
+                    style="background-color: #a5d7c1"
+                  ></span>
+                </div>
+                <div class="product-info-wrapper">
+                  <span class="product-tag">Novas Cores</span>
+                  <p class="product-name">AirPods Max - Meia-noite</p>
+                  <p class="product-price">R$ 6.599,00</p>
+                </div></a
+              >
+            </div>
+          </div>
+          <button class="carousel-arrow next-arrow" aria-label="Próximo">
+            ›
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active"></span><span class="dot"></span
+          ><span class="dot"></span>
+        </div>
+        <a href="produtos.html" class="more-products-link"
+          >Comprar fones de ouvido e caixas de som ></a
+        >
+      </section>
     </main>
 
-     <footer>
+    <footer>
       <section class="footer-container">
         <div class="icons-contact">
           <img src="../img/logoescura.png" alt="Logo da Tech Store" />
@@ -275,7 +533,9 @@
         </div>
         <div class="empty-cart-message">
           <h3>Desculpe, você não tem produtos aqui</h3>
-          <p>Volte e explore para adicionar produtos no seu carrinho de compras.</p>
+          <p>
+            Volte e explore para adicionar produtos no seu carrinho de compras.
+          </p>
         </div>
         <a href="produtos.html" class="explore-button" id="exploreShopButton">
           Explorar loja

@@ -29,76 +29,7 @@ $terceira: #c484f1; // Cor de hover dos links
   padding-right: 20px;
 }
 
-// Estilos Base
-body {
-  font-family: $font-family-main;
-  color: $text-color-primary;
-  background-color: $background-color-page;
-  margin: 0;
-  padding: 0;
-  // Cria um espaço no topo da página para o header fixo não sobrepor o conteúdo
-  padding-top: $header-height;
-}
 
-// ESTILOS DO HEADER (ADAPTADOS DO SEU CSS GLOBAL) 
-header {
-  // Faz o header ficar fixo no topo
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200; // Camada mais alta para ficar sobre tudo
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: $primeira; // Cor de fundo escura do seu header original
-  padding: 15px 0px;
-  height: $header-height;
-  box-sizing: border-box;
-}
-
-.logo {
-  width: 30%;
-  img {
-    width: 30%;
-    margin-left: 80px;
-  }
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  backdrop-filter: blur(50px);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.234);
-  width: 35%;
-  margin-right: 30px;
-  justify-content: space-around;
-
-  a {
-    color: $branco;
-    font-size: 17px;
-    &:hover {
-      color: $terceira;
-      transition: 0.4s ease;
-    }
-  }
-
-  li:hover {
-    transition: 0.4s ease;
-    transform: scale(1.1);
-  }
-
-  &:hover {
-    box-shadow: 0 0 15px $terceira;
-    transition: 0.4s ease;
-  }
-}
 
 .buscar {
   display: flex;
