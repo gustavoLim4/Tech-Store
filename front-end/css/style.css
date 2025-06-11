@@ -503,6 +503,10 @@ footer {
   font-size: 1em;
 }
 
+#message {
+  cursor: pointer;
+}
+
 .contato {
   display: flex;
   justify-content: center;
