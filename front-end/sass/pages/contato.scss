@@ -53,7 +53,7 @@
       border: none;
       @include sombra($preto, 0.2);
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 5px;;
       &:focus {
         outline: none;
         color: $preto;
@@ -61,7 +61,15 @@
     }
     textarea {
       resize: none;
-      height: 150px;  
+      height: 150px;
+      border: 0;
+      padding: 10px;
+      border-radius: 5px;
+      @include sombra($preto, 0.2);
+      &:focus {
+        outline: none;
+        color: $preto;
+      }
     }
   }
 
