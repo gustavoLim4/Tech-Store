@@ -50,13 +50,13 @@ main {
   font-size: 2.8em;
   font-weight: 600;
   line-height: 1.1;
-  margin: 0 119px 20px;
+  margin: 0 112px 20px;
   color: $primeira;
   text-align: left;
 }
 .hero-banner__text-column .texto-p,
 .hero-banner__text-column .botao-magsafe {
-  margin: 0 119px 20px;
+  margin: 0 115px 20px;
   text-align: left;
 }
 .hero-banner__text-column .btn {
@@ -218,6 +218,22 @@ main {
   padding: 64px;
   box-sizing: border-box;
 }
+  .buttons-carrosel {
+    display: flex;
+    justify-content: end;
+    margin: 0 30px 0;
+    gap: 10px;
+    button {
+      color: $branco;
+      border: 0;
+      background-color: $segunda;
+      padding: 10px 20px;
+      border-radius: 5px;
+      &:hover {
+        @include scala($escala: 1.03);
+      }
+    }
+  }
 .product-card img {
   height: 204px;
   object-fit: contain;
