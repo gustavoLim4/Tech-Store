@@ -15,14 +15,13 @@ function handleCredentialResponse(response) {
      string em base64 para uma string de texto normal. O payload do JWT é codificado
      em base64, então usamos atob() para "traduzir" essa codificação para algo legível. */
 
-
     const ResponstaJWT = JSON.parse(atob(response.credential.split(".")[1]));
     console.log("Dados decodificados:", ResponstaJWT);
 
     // Salvar dados no sessionStorage
     /*O sessionStorage é utilizado para armazenar dados 
     temporários no navegador durante a sessão ativa.*/
-    
+
     sessionStorage.setItem("userName", ResponstaJWT.name);
     sessionStorage.setItem("userEmail", ResponstaJWT.email);
     sessionStorage.setItem("userImg", ResponstaJWT.picture);
@@ -33,8 +32,6 @@ function handleCredentialResponse(response) {
     console.error("Erro ao processar token:", error);
   }
 }
-
-
 
 // --- Carrossel Banner (Topo) ---
 let currentIndex = 0;
@@ -249,7 +246,6 @@ closeBtn.addEventListener("click", () => {
   body.classList.remove("sign-up-js", "sign-in-js");
 });
 
-
 function handleCredentialResponse(response) {
   console.log("Token recebido:", response.credential);
 
@@ -267,14 +263,13 @@ function handleCredentialResponse(response) {
      string em base64 para uma string de texto normal. O payload do JWT é codificado
      em base64, então usamos atob() para "traduzir" essa codificação para algo legível. */
 
-
     const ResponstaJWT = JSON.parse(atob(response.credential.split(".")[1]));
     console.log("Dados decodificados:", ResponstaJWT);
 
     // Salvar dados no sessionStorage
     /*O sessionStorage é utilizado para armazenar dados 
     temporários no navegador durante a sessão ativa.*/
-    
+
     sessionStorage.setItem("userName", ResponstaJWT.name);
     sessionStorage.setItem("userEmail", ResponstaJWT.email);
     sessionStorage.setItem("userImg", ResponstaJWT.picture);
@@ -300,4 +295,29 @@ function handleCredentialResponse(response) {
   }
 }
 
+function BtnImg() {
+  const imgtroca = document.querySelector("#imgprodutotroca");
 
+  document.querySelector("#btnMeiaNoite")?.addEventListener("click", () => {
+    imgtroca.src = "../../img/airPodsMax.png";
+  });
+
+  document.querySelector("#btnLaranja")?.addEventListener("click", () => {
+    imgtroca.src = "../../img/AirMaxLaranja.jpg";
+  });
+
+  document.querySelector("#btnRoxo")?.addEventListener("click", () => {
+    imgtroca.src = "../../img/AirMaxRoxo.jpg";
+  });
+
+  document.querySelector("#btnEstrelar")?.addEventListener("click", () => {
+    imgtroca.src = "../../img/AirMaxEstelar.jpg";
+  });
+
+  document.querySelector("#btnAzul")?.addEventListener("click", () => {
+    imgtroca.src = "../../img/AirMaxAzul.jpg";  
+  });
+}
+
+// Chama a função depois que o DOM estiver carregado
+BtnImg();
