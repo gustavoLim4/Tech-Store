@@ -1635,6 +1635,23 @@ main {
   box-sizing: border-box;
 }
 
+.buttons-carrosel {
+  display: flex;
+  justify-content: end;
+  margin: 0 30px 0;
+  gap: 10px;
+}
+.buttons-carrosel button {
+  color: #fff;
+  border: 0;
+  background-color: #8906e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.buttons-carrosel button:hover {
+  transform: scale(1.03);
+}
+
 .product-card img {
   height: 204px;
   object-fit: contain;
