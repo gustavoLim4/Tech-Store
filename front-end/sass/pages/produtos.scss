@@ -1,0 +1,337 @@
+/* SUB-CABEÇALHO STICKY */
+.sticky-subheader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.sticky-subheader__content {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sticky-subheader__content h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: $primeira;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 20px;
+  min-height: 400px;
+  background: url('/front-end/img/MagSafe-produtos.jpg') ;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+}
+.hero-banner__text-column {
+  flex: 1;
+  max-width: 500px;
+  padding-right: 40px;
+}
+.hero-banner__text-column h1 {
+  font-size: 2.8em;
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 112px 20px;
+  color: $primeira;
+  text-align: left;
+}
+.hero-banner__text-column .texto-p,
+.hero-banner__text-column .botao-magsafe {
+  margin: 0 115px 20px;
+  text-align: left;
+}
+.hero-banner__text-column .btn {
+  font-size: 1.1em;
+  color: $branco;
+  border: 1px solid $branco;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hero-banner__text-column .btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hero-banner__image-column {
+  display: none;
+}
+
+/* BUSCA E CATEGORIAS */
+.search-category-section {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 40px;
+}
+.search-category-section h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0 0 1.5em 0;
+}
+.search-bar {
+  max-width: 580px;
+  margin: 0 auto 2.5em auto;
+  position: relative;
+}
+.search-bar input {
+  width: 100%;
+  padding: 0.75em 1em 0.75em 2.5em;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+.search-bar .Search-icon {
+  position: absolute;
+  left: 0.9em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+.categories-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.category-item {
+  cursor: pointer;
+}
+.category-item .icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f5f5f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0.75em auto;
+}
+.category-item .icon-circle img {
+  max-width: 50%;
+  max-height: 50%;
+}
+.category-item p {
+  font-size: 0.9em;
+}
+
+/* PRODUTOS EM DESTAQUE */
+.featured-products-section {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.featured-products-section h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.featured-products-section .more-products-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: #0071e3;
+  text-decoration: none;
+}
+
+/* CARROSSEL DE PRODUTOS */
+.product-carousel-wrapper {
+  position: relative;
+}
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 20px;
+  padding: 70px;
+  margin: 0 -10px;
+}
+.product-carousel::-webkit-scrollbar {
+  display: none;
+}
+.product-card {
+  flex: 0 0 calc((100% - 2 * 16px) / 3);
+  min-width: 280px;
+  scroll-snap-align: start;
+  background-color: $branco;
+  border: 1px solid #e8e8e8;
+  border-radius: 18px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px $segunda;
+}
+.product-card .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e7e7e7;
+  color: $branco;
+  border: none;
+  padding: 10px 21px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 100%;
+  z-index: 99999;
+}
+.product-card .product-link {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  padding: 64px;
+  box-sizing: border-box;
+}
+  .buttons-carrosel {
+    display: flex;
+    justify-content: end;
+    margin: 0 30px 0;
+    gap: 10px;
+    button {
+      color: $branco;
+      border: 0;
+      background-color: $segunda;
+      padding: 10px 20px;
+      border-radius: 5px;
+      &:hover {
+        @include scala($escala: 1.03);
+      }
+    }
+  }
+.product-card img {
+  height: 204px;
+  object-fit: contain;
+  margin: 0 -20px 20px;
+}
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  min-height: 18px;
+  align-items: center;
+}
+.color-options .color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.color-options .plus-btn {
+  height: 28px;
+}
+.product-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+.new-tag, .product-tag {
+  font-size: 1.2em;
+  color: $segunda;
+  margin-bottom: 8px;
+  min-height: 1.2em;
+}
+.product-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 4px -1px;
+}
+.price-container {
+  margin-top: auto;
+  padding-top: 10px;
+}
+.original-price {
+  font-size: 0.85em;
+  color: #6e6e73;
+  text-decoration: none;
+  display: block;
+}
+.final-price {
+  font-size: 1em;
+  color: #1d1d1f;
+  font-weight: 500;
+  display: block;
+}
+
+/* SETAS E INDICADORES */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(240, 240, 240, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #404040;
+  backdrop-filter: blur(5px);
+}
+.carousel-arrow.prev-arrow {
+  left: -18px;
+}
+.carousel-arrow.next-arrow {
+  right: -18px;
+}
+.carousel-arrow:hover {
+  cursor: pointer;
+  padding: 10px;
+  background-color: $segunda;
+}
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.carousel-dots .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #d1d1d6;
+  margin: 0 4px;
+}
+.carousel-dots .dot.active {
+  background-color: #6e6e73;
+}
