@@ -174,7 +174,7 @@ main {
   gap: 16px;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 20px;
-  padding: 70px;
+  padding: 50px 30px;
   margin: 0 -10px;
 }
 .product-carousel::-webkit-scrollbar {
@@ -192,7 +192,7 @@ main {
 }
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px $segunda;
+  box-shadow: 0 5px 25px #8906e69c;
 }
 .product-card .button {
   position: absolute;
@@ -215,7 +215,7 @@ main {
   text-decoration: none;
   color: inherit;
   height: 100%;
-  padding: 64px;
+  padding: 40px;
   box-sizing: border-box;
 }
   .buttons-carrosel {

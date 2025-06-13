@@ -1585,7 +1585,7 @@ main {
   gap: 16px;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 20px;
-  padding: 70px;
+  padding: 50px 30px;
   margin: 0 -10px;
 }
 
@@ -1606,7 +1606,7 @@ main {
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px #8906e6;
+  box-shadow: 0 5px 25px rgba(137, 6, 230, 0.6117647059);
 }
 
 .product-card .button {
@@ -1631,7 +1631,7 @@ main {
   text-decoration: none;
   color: inherit;
   height: 100%;
-  padding: 64px;
+  padding: 40px;
   box-sizing: border-box;
 }
 

@@ -315,9 +315,11 @@ function BtnImg() {
   });
 
   document.querySelector("#btnAzul")?.addEventListener("click", () => {
-    imgtroca.src = "../../img/AirMaxAzul.jpg";  
+    imgtroca.src = "../../img/AirMaxAzul.jpg";
   });
 }
 
 // Chama a função depois que o DOM estiver carregado
 BtnImg();
+
+AOS.init();
